@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-05T14:26:43.278863+00:00",
+  "selection_rule": "Highest Validation recall at FPR <= 1%, then lower FPR, then earlier predeclared candidate; never choose a random seed on performance",
+  "selected": {
+    "rf": "rf_base",
+    "if": "if_no_volume_timing",
+    "bilstm": "bilstm_base",
+    "sage": "sage_base"
+  },
+  "evaluate_runs": [
+    "rf_base",
+    "if_base",
+    "bilstm_base",
+    "sage_base",
+    "if_no_volume_timing"
+  ],
+  "sha256": {
+    "06_results\\runs\\rf_base\\config.json": "47da05f8a5b4b74b654c8d428eee1dea0e4052a1ac4287c296488ed972ce348e",
+    "06_results\\runs\\rf_base\\model.joblib": "2657be935871535fb478f199800671ca238f376f4ac620b5c72c12b3b85ba00f",
+    "06_results\\runs\\rf_base\\validation_metrics.json": "4cd331db56c75971f3b36596673858b1f334cf771563c1add3c2807f3b88bcc5",
+    "06_results\\runs\\if_no_volume_timing\\config.json": "484f8c84f5e07e2136068cc48dcc070cc76268c2f91f91dc4504847f4af9a14f",
+    "06_results\\runs\\if_no_volume_timing\\model.joblib": "1c409f002357d296c69613817963a883deb76bc8422493edcf4f38376c50ce6c",
+    "06_results\\runs\\if_no_volume_timing\\validation_metrics.json": "7ea44cd916ee878f4913e9626023b97eedd9a0948009db0752dc6e7b851b8191",
+    "06_results\\runs\\bilstm_base\\config.json": "78d4737abee1cbeecb07b1adc8f31a491559fe5ce0ae01533ac5e6508caf7faf",
+    "06_results\\runs\\bilstm_base\\model.pt": "224bb7f4ca74104efd84355e182379650a7ebf5d5c5d6893d5dda006d03baf34",
+    "06_results\\runs\\bilstm_base\\validation_metrics.json": "607b0ee261bf193bf32c66dc61fb5d6f9a1abbea75eb37d3b93e523a78ede5ed",
+    "06_results\\runs\\sage_base\\config.json": "ddb460ab15aa853633977a3f30bcbf4eca9db62589a84d6adb877b3125725546",
+    "06_results\\runs\\sage_base\\model.pt": "dea37117f2c86f2bd48aeede9d42f141e5d176a5fedfa9e4611651e04bcfa746",
+    "06_results\\runs\\sage_base\\validation_metrics.json": "9725b9511436e54a05ae667a63dc8ce9bff115545bed0932c5929435022264ac"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "data_authority": "final_split_manifest.csv and the four frozen split CSV files",
+  "sample_unit": "Non-overlapping 128-transaction windows within split_group_id; partial windows require at least 32 transactions",
+  "leakage_controls": [
+    "No sample crosses a split_group_id boundary",
+    "No split_group_id appears in more than one split",
+    "All learned preprocessing is fitted on Train only",
+    "Validation is used only for tuning, early stopping, and threshold selection",
+    "Test and External Test do not influence feature or model selection",
+    "Raw source, endpoint, recording, transaction, tool, and domain identities are excluded from predictor matrices"
+  ],
+  "model_roles": {
+    "Random Forest": "supervised tabular baseline",
+    "Bidirectional LSTM": "supervised ordered-sequence model",
+    "GraphSAGE": "supervised structural graph model",
+    "Isolation Forest": "benign-only anomaly detector"
+  },
+  "hyperparameter_selection": {
+    "Random Forest": {
+      "n_estimators": [
+        300,
+        500
+      ],
+      "max_depth": [
+        12,
+        20,
+        null
+      ],
+      "min_samples_leaf": [
+        1,
+        5,
+        10
+      ],
+      "max_features": [
+        "sqrt",
+        0.5
+      ]
+    },
+    "Bidirectional LSTM": {
+      "layers": [
+        1,
+        2
+      ],
+      "hidden_units_per_direction": [
+        32,
+        64
+      ],
+      "dropout": [
+        0.2,
+        0.3
+      ],
+      "learning_rate": [
+        0.001,
+        0.0003
+      ],
+      "early_stopping_patience": 8
+    },
+    "GraphSAGE": {
+      "layers": [
+        2,
+        3
+      ],
+      "hidden_units": [
+        32,
+        64
+      ],
+      "dropout": [
+        0.2,
+        0.3
+      ],
+      "learning_rate": [
+        0.001,
+        0.0003
+      ],
+      "pooling": [
+        "mean",
+        "mean_plus_max"
+      ],
+      "early_stopping_patience": 8
+    },
+    "Isolation Forest": {
+      "n_estimators": [
+        300,
+        500
+      ],
+      "max_samples": [
+        256,
+        1024
+      ],
+      "max_features": [
+        0.5,
+        1.0
+      ],
+      "training_labels_used": "benign Train only"
+    }
+  },
+  "threshold_policy": {
+    "window_level": "Choose on Validation the threshold with the highest malicious recall subject to false-positive rate <= 1%; if no candidate satisfies it, choose the lowest-FPR candidate and report the deviation",
+    "recording_level": "Aggregate window scores by the 95th percentile within split_group_id and choose a separate Validation threshold under the same 1% FPR constraint",
+    "isolation_forest": "The contamination setting does not define the final threshold; the final operating threshold is selected on Validation",
+    "recording_level_discreteness": "Validation contains 11 benign represented recordings. Therefore a 1% empirical recording-level FPR is unattainable except at zero false positives; report the exact observed fraction and a recording-cluster/bootstrap or binomial interval rather than claiming precise 1% calibration."
+  },
+  "internal_test_metrics": [
+    "AUROC",
+    "AUPRC",
+    "F1",
+    "balanced_accuracy",
+    "precision",
+    "recall",
+    "specificity",
+    "false_positive_rate",
+    "MCC",
+    "confusion_matrix"
+  ],
+  "external_test_metrics": [
+    "malicious_recall_overall",
+    "recall_by_evaluation_subset",
+    "recall_by_tool",
+    "recall_by_source",
+    "score_distribution"
+  ],
+  "external_test_prohibited_metrics": [
+    "accuracy",
+    "specificity",
+    "binary_AUROC",
+    "binary_AUPRC",
+    "binary_F1"
+  ],
+  "uncertainty": "95% confidence intervals from recording-cluster bootstrap resampling",
+  "repeated_training": "Three fixed random seeds for neural models; report mean and standard deviation on Validation, then one locked configuration on Test",
+  "comparison_rule": "Compare model-specific attribution only at the shared behavioral-signal level; never average RF, sequence, and graph importance values",
+  "sample_population_distinction": {
+    "diagnostic_chapters_4_5": "2,362 capped Train windows (maximum 24 per recording) used only for balanced diagnostics, ranking, and distribution-shift visualization",
+    "production_models": "23,207 uncapped eligible windows across frozen splits, including 10,971 Train windows; recording/class weighting or group-balanced batches control dominance",
+    "scaler_fit": "Final production preprocessing parameters are fitted on all 10,971 eligible Train windows after the core schema is locked"
+  },
+  "feature_roster": {
+    "audited_columns": 52,
+    "primary_tabular_core": 42,
+    "supporting_or_ablation_only": 10,
+    "selection_rule": "A field enters the primary core when group-median evidence has Holm-adjusted p<0.05 and |Cliff's delta|>=0.147 in pooled or within-Nitsan analysis; supporting fields remain available only for pre-registered ablation or model-specific structural use"
+  },
+  "model_semantics": {
+    "Bidirectional LSTM": "Completed-window classifier: both temporal directions are available only after a 128-transaction window (or an eligible masked partial window) is complete; it is not claimed as per-query streaming detection",
+    "GraphSAGE": "The primary baseline uses node attributes and topology only. Stored edge attributes are excluded from vanilla GraphSAGE and reserved for a separately labeled edge-aware ablation",
+    "Isolation Forest": "Uses the scaled 42-feature core and is fitted only on benign Train groups sampled or weighted evenly by recording"
+  },
+  "quality_controls_added": [
+    "Chapter 3 statistical inference uses split_group_id recording medians as independent units",
+    "Holm family-wise correction is applied separately across all 52 pooled and within-Nitsan tests",
+    "Chapter 4 median imputation and class/group weights are fitted independently inside each training fold",
+    "Chapter 4 permutation importance is averaged across all five held-recording folds with five repeats per fold"
+  ]
+}

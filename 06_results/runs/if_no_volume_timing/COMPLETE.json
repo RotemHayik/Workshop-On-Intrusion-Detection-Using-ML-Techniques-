@@ -1,0 +1,44 @@
+{
+  "run_id": "if_no_volume_timing",
+  "model": "if",
+  "seed": 42,
+  "seconds": 2.4311089999973774,
+  "validation": {
+    "window": {
+      "n": 2350,
+      "tn": 1176,
+      "fp": 1,
+      "fn": 0,
+      "tp": 1173,
+      "threshold": 0.7367918405322218,
+      "recall": 1.0,
+      "accuracy": 0.9995744680851064,
+      "precision": 0.9991482112436116,
+      "f1": 0.9995739241585002,
+      "fpr": 0.0008496176720475786,
+      "specificity": 0.9991503823279524,
+      "balanced_accuracy": 0.9995751911639762,
+      "auroc": 0.9999739247773284,
+      "auprc": 0.9999734604291092,
+      "mcc": 0.9991492967851924
+    },
+    "recording": {
+      "n": 25,
+      "tn": 11,
+      "fp": 0,
+      "fn": 0,
+      "tp": 14,
+      "threshold": 0.7702327396530125,
+      "recall": 1.0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "specificity": 1.0,
+      "balanced_accuracy": 1.0,
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "mcc": 1.0
+    }
+  }
+}

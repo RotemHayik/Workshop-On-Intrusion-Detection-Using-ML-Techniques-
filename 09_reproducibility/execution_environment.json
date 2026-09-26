@@ -1,0 +1,15 @@
+{
+  "system": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14",
+  "processor": "Intel Core i5-10210U",
+  "physical_cores": 4,
+  "logical_threads": 8,
+  "installed_ram_bytes": 8328585216,
+  "gpu": "Intel UHD Graphics; CPU computation only",
+  "detector_threads": 3,
+  "llm_threads": 2,
+  "experiment_date": "2026-09-05",
+  "completed_training_runs": 22,
+  "llm_requests": 21,
+  "raw_example_windows_verified": 20
+}

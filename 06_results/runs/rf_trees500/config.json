@@ -1,0 +1,23 @@
+{
+  "run_id": "rf_trees500",
+  "model": "rf",
+  "seed": 42,
+  "parameters": {
+    "n_estimators": 500,
+    "criterion": "gini",
+    "max_depth": 12,
+    "min_samples_split": 2,
+    "min_samples_leaf": 5,
+    "min_weight_fraction_leaf": 0.0,
+    "max_features": "sqrt",
+    "max_leaf_nodes": null,
+    "min_impurity_decrease": 0.0,
+    "bootstrap": true,
+    "oob_score": false,
+    "class_weight": null,
+    "ccp_alpha": 0.0,
+    "max_samples": null,
+    "warm_start": false
+  },
+  "balance": "recording_class"
+}

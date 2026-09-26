@@ -1,0 +1,117 @@
+START rf_base
+COMPLETE {"run_id": "rf_base", "model": "rf", "seed": 42, "seconds": 3.377847199968528, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.8503957584128824, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8503957584128824, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START rf_depth20
+COMPLETE {"run_id": "rf_depth20", "model": "rf", "seed": 42, "seconds": 3.2432890000054613, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.8503957584128824, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8503957584128824, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START rf_leaf10
+COMPLETE {"run_id": "rf_leaf10", "model": "rf", "seed": 42, "seconds": 4.220025199989323, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.8491367097352398, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8491367097352398, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START rf_trees500
+COMPLETE {"run_id": "rf_trees500", "model": "rf", "seed": 42, "seconds": 4.511320899997372, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.8655333900883142, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8655333900883142, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START if_base
+COMPLETE {"run_id": "if_base", "model": "if", "seed": 42, "seconds": 2.4167182999663055, "validation": {"window": {"n": 2350, "tn": 1170, "fp": 7, "fn": 0, "tp": 1173, "threshold": 0.7055694556563349, "recall": 1.0, "accuracy": 0.9970212765957447, "precision": 0.9940677966101695, "f1": 0.9970250743731407, "fpr": 0.00594732370433305, "specificity": 0.994052676295667, "balanced_accuracy": 0.9970263381478335, "auroc": 0.9990786754656057, "auprc": 0.9984475422175095, "mcc": 0.9940602364241694}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 4, "tp": 10, "threshold": 0.7599311888671486, "recall": 0.7142857142857143, "accuracy": 0.84, "precision": 1.0, "f1": 0.8333333333333334, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 0.8571428571428572, "auroc": 0.974025974025974, "auprc": 0.9786891679748823, "mcc": 0.7237468644557459}}}
+START if_samples1024
+COMPLETE {"run_id": "if_samples1024", "model": "if", "seed": 42, "seconds": 3.009852499992121, "validation": {"window": {"n": 2350, "tn": 1174, "fp": 3, "fn": 0, "tp": 1173, "threshold": 0.7167928176054781, "recall": 1.0, "accuracy": 0.9987234042553191, "precision": 0.9974489795918368, "f1": 0.9987228607918263, "fpr": 0.002548853016142736, "specificity": 0.9974511469838573, "balanced_accuracy": 0.9987255734919287, "auroc": 0.9994871872874598, "auprc": 0.999245985134831, "mcc": 0.9974500632872584}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 2, "tp": 12, "threshold": 0.7491590949649072, "recall": 0.8571428571428571, "accuracy": 0.92, "precision": 1.0, "f1": 0.9230769230769231, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 0.9285714285714286, "auroc": 0.987012987012987, "auprc": 0.9901360544217687, "mcc": 0.8516306272526402}}}
+START if_features_half
+COMPLETE {"run_id": "if_features_half", "model": "if", "seed": 42, "seconds": 2.011596099997405, "validation": {"window": {"n": 2350, "tn": 1170, "fp": 7, "fn": 0, "tp": 1173, "threshold": 0.6862155041287304, "recall": 1.0, "accuracy": 0.9970212765957447, "precision": 0.9940677966101695, "f1": 0.9970250743731407, "fpr": 0.00594732370433305, "specificity": 0.994052676295667, "balanced_accuracy": 0.9970263381478335, "auroc": 0.9981769073482151, "auprc": 0.9962462151896945, "mcc": 0.9940602364241694}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 6, "tp": 8, "threshold": 0.7589504082049077, "recall": 0.5714285714285714, "accuracy": 0.76, "precision": 1.0, "f1": 0.7272727272727273, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 0.7857142857142857, "auroc": 0.961038961038961, "auprc": 0.9650528043385186, "mcc": 0.6080689921050603}}}
+START if_trees500
+COMPLETE {"run_id": "if_trees500", "model": "if", "seed": 42, "seconds": 2.5641123999957927, "validation": {"window": {"n": 2350, "tn": 1170, "fp": 7, "fn": 0, "tp": 1173, "threshold": 0.705435150590046, "recall": 1.0, "accuracy": 0.9970212765957447, "precision": 0.9940677966101695, "f1": 0.9970250743731407, "fpr": 0.00594732370433305, "specificity": 0.994052676295667, "balanced_accuracy": 0.9970263381478335, "auroc": 0.9991061993117589, "auprc": 0.9984960161244308, "mcc": 0.9940602364241694}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 5, "tp": 9, "threshold": 0.7646774916497154, "recall": 0.6428571428571429, "accuracy": 0.8, "precision": 1.0, "f1": 0.782608695652174, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 0.8214285714285714, "auroc": 0.9675324675324675, "auprc": 0.9721956614813758, "mcc": 0.6648039453209387}}}
+START bilstm_base
+{"run": "bilstm_base", "epoch": 1, "loss": 0.1292, "val_recall": 1.0, "val_auprc": 0.99996, "seconds": 136.44}
+Already complete rf_base
+Already complete rf_depth20
+Already complete rf_leaf10
+Already complete rf_trees500
+Already complete if_base
+Already complete if_samples1024
+Already complete if_features_half
+Already complete if_trees500
+START bilstm_base
+{"run": "bilstm_base", "epoch": 1, "loss": 0.1292, "val_recall": 1.0, "val_auprc": 0.99996, "seconds": 17.93}
+{"run": "bilstm_base", "epoch": 2, "loss": 0.01063, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 10.59}
+{"run": "bilstm_base", "epoch": 3, "loss": 0.00511, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 13.89}
+{"run": "bilstm_base", "epoch": 4, "loss": 0.00154, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 17.13}
+{"run": "bilstm_base", "epoch": 5, "loss": 0.00095, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 19.25}
+{"run": "bilstm_base", "epoch": 6, "loss": 0.00051, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 15.6}
+{"run": "bilstm_base", "epoch": 7, "loss": 0.00044, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 20.81}
+{"run": "bilstm_base", "epoch": 8, "loss": 0.00027, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 20.22}
+{"run": "bilstm_base", "epoch": 9, "loss": 0.00026, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 11.83}
+{"run": "bilstm_base", "epoch": 10, "loss": 0.00015, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 14.71}
+COMPLETE {"run_id": "bilstm_base", "model": "bilstm", "seed": 42, "seconds": 168.4783075999585, "validation": {"window": {"n": 2350, "tn": 1176, "fp": 1, "fn": 0, "tp": 1173, "threshold": 0.9839966893196106, "recall": 1.0, "accuracy": 0.9995744680851064, "precision": 0.9991482112436116, "f1": 0.9995739241585002, "fpr": 0.0008496176720475786, "specificity": 0.9991503823279524, "balanced_accuracy": 0.9995751911639762, "auroc": 0.9999971027530364, "auprc": 0.9999970916308941, "mcc": 0.9991492967851924}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.9965960383415222, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START bilstm_width64
+{"run": "bilstm_width64", "epoch": 1, "loss": 0.08529, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 18.04}
+{"run": "bilstm_width64", "epoch": 2, "loss": 0.00779, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 18.66}
+{"run": "bilstm_width64", "epoch": 3, "loss": 0.00304, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 19.37}
+{"run": "bilstm_width64", "epoch": 4, "loss": 0.00222, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 21.47}
+{"run": "bilstm_width64", "epoch": 5, "loss": 0.00127, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 19.46}
+{"run": "bilstm_width64", "epoch": 6, "loss": 0.00141, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 19.29}
+{"run": "bilstm_width64", "epoch": 7, "loss": 0.00078, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 19.56}
+{"run": "bilstm_width64", "epoch": 8, "loss": 0.00023, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 24.81}
+{"run": "bilstm_width64", "epoch": 9, "loss": 8e-05, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 20.87}
+COMPLETE {"run_id": "bilstm_width64", "model": "bilstm", "seed": 42, "seconds": 183.28191459999653, "validation": {"window": {"n": 2350, "tn": 1172, "fp": 5, "fn": 0, "tp": 1173, "threshold": 0.16390414535999298, "recall": 1.0, "accuracy": 0.997872340425532, "precision": 0.9957555178268251, "f1": 0.9978732454274777, "fpr": 0.004248088360237893, "specificity": 0.9957519116397621, "balanced_accuracy": 0.9978759558198811, "auroc": 0.9999920325708503, "auprc": 0.9999920115024643, "mcc": 0.9957537147316612}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.9981603026390076, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START bilstm_lr_low
+{"run": "bilstm_lr_low", "epoch": 1, "loss": 0.31579, "val_recall": 1.0, "val_auprc": 0.99995, "seconds": 11.82}
+{"run": "bilstm_lr_low", "epoch": 2, "loss": 0.04817, "val_recall": 1.0, "val_auprc": 0.99997, "seconds": 14.24}
+{"run": "bilstm_lr_low", "epoch": 3, "loss": 0.01715, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 12.32}
+{"run": "bilstm_lr_low", "epoch": 4, "loss": 0.01042, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 13.56}
+{"run": "bilstm_lr_low", "epoch": 5, "loss": 0.00743, "val_recall": 1.0, "val_auprc": 0.99986, "seconds": 15.17}
+{"run": "bilstm_lr_low", "epoch": 6, "loss": 0.01167, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 14.46}
+{"run": "bilstm_lr_low", "epoch": 7, "loss": 0.00632, "val_recall": 1.0, "val_auprc": 0.99994, "seconds": 13.82}
+{"run": "bilstm_lr_low", "epoch": 8, "loss": 0.00737, "val_recall": 1.0, "val_auprc": 0.99987, "seconds": 13.04}
+{"run": "bilstm_lr_low", "epoch": 9, "loss": 0.00311, "val_recall": 1.0, "val_auprc": 0.99984, "seconds": 15.43}
+{"run": "bilstm_lr_low", "epoch": 10, "loss": 0.00501, "val_recall": 1.0, "val_auprc": 0.99983, "seconds": 12.11}
+{"run": "bilstm_lr_low", "epoch": 11, "loss": 0.0052, "val_recall": 1.0, "val_auprc": 0.99982, "seconds": 14.91}
+COMPLETE {"run_id": "bilstm_lr_low", "model": "bilstm", "seed": 42, "seconds": 152.22562739998102, "validation": {"window": {"n": 2350, "tn": 1176, "fp": 1, "fn": 0, "tp": 1173, "threshold": 0.961039125919342, "recall": 1.0, "accuracy": 0.9995744680851064, "precision": 0.9991482112436116, "f1": 0.9995739241585002, "fpr": 0.0008496176720475786, "specificity": 0.9991503823279524, "balanced_accuracy": 0.9995751911639762, "auroc": 0.9999992756882591, "auprc": 0.9999992738373773, "mcc": 0.9991492967851924}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.9897040724754333, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START bilstm_deeper
+{"run": "bilstm_deeper", "epoch": 1, "loss": 0.10744, "val_recall": 1.0, "val_auprc": 0.99999, "seconds": 32.27}
+{"run": "bilstm_deeper", "epoch": 2, "loss": 0.00606, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 30.28}
+{"run": "bilstm_deeper", "epoch": 3, "loss": 0.00265, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 28.39}
+{"run": "bilstm_deeper", "epoch": 4, "loss": 0.00455, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 25.38}
+{"run": "bilstm_deeper", "epoch": 5, "loss": 0.00203, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 24.41}
+{"run": "bilstm_deeper", "epoch": 6, "loss": 0.00077, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 24.92}
+{"run": "bilstm_deeper", "epoch": 7, "loss": 0.00041, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 25.64}
+{"run": "bilstm_deeper", "epoch": 8, "loss": 0.00014, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 32.31}
+{"run": "bilstm_deeper", "epoch": 9, "loss": 0.0001, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 23.19}
+COMPLETE {"run_id": "bilstm_deeper", "model": "bilstm", "seed": 42, "seconds": 248.59577469999203, "validation": {"window": {"n": 2350, "tn": 1173, "fp": 4, "fn": 0, "tp": 1173, "threshold": 0.01517590880393982, "recall": 1.0, "accuracy": 0.9982978723404256, "precision": 0.9966015293118097, "f1": 0.9982978723404256, "fpr": 0.0033984706881903144, "specificity": 0.9966015293118097, "balanced_accuracy": 0.9983007646559048, "auroc": 0.999994205506073, "auprc": 0.9999941919013233, "mcc": 0.9966015293118097}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.996992826461792, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START sage_base
+{"run": "sage_base", "epoch": 1, "loss": 0.35071, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 6.99}
+{"run": "sage_base", "epoch": 2, "loss": 0.13449, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 6.48}
+{"run": "sage_base", "epoch": 3, "loss": 0.06974, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 5.91}
+{"run": "sage_base", "epoch": 4, "loss": 0.0423, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.42}
+{"run": "sage_base", "epoch": 5, "loss": 0.02819, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 11.05}
+{"run": "sage_base", "epoch": 6, "loss": 0.01992, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 13.53}
+{"run": "sage_base", "epoch": 7, "loss": 0.0147, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.17}
+{"run": "sage_base", "epoch": 8, "loss": 0.01121, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 9.13}
+{"run": "sage_base", "epoch": 9, "loss": 0.00869, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.75}
+COMPLETE {"run_id": "sage_base", "model": "sage", "seed": 42, "seconds": 76.62537680001697, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.7953194379806519, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8183495402336121, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START sage_width64
+{"run": "sage_width64", "epoch": 1, "loss": 0.29974, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 9.9}
+{"run": "sage_width64", "epoch": 2, "loss": 0.09082, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 12.94}
+{"run": "sage_width64", "epoch": 3, "loss": 0.04368, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 10.16}
+{"run": "sage_width64", "epoch": 4, "loss": 0.02523, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 11.96}
+{"run": "sage_width64", "epoch": 5, "loss": 0.01569, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 14.25}
+{"run": "sage_width64", "epoch": 6, "loss": 0.01066, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 11.32}
+{"run": "sage_width64", "epoch": 7, "loss": 0.00768, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 11.75}
+{"run": "sage_width64", "epoch": 8, "loss": 0.00573, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 9.61}
+{"run": "sage_width64", "epoch": 9, "loss": 0.0045, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 10.19}
+COMPLETE {"run_id": "sage_width64", "model": "sage", "seed": 42, "seconds": 103.43373739998788, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.8541621565818787, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 0.9999999999999999, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8698472380638123, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START sage_lr_low
+{"run": "sage_lr_low", "epoch": 1, "loss": 0.50199, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.18}
+{"run": "sage_lr_low", "epoch": 2, "loss": 0.32789, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.32}
+{"run": "sage_lr_low", "epoch": 3, "loss": 0.24249, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 5.85}
+{"run": "sage_lr_low", "epoch": 4, "loss": 0.18443, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 6.37}
+{"run": "sage_lr_low", "epoch": 5, "loss": 0.14268, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.6}
+{"run": "sage_lr_low", "epoch": 6, "loss": 0.11245, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.13}
+{"run": "sage_lr_low", "epoch": 7, "loss": 0.0901, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 6.11}
+{"run": "sage_lr_low", "epoch": 8, "loss": 0.07328, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 6.26}
+{"run": "sage_lr_low", "epoch": 9, "loss": 0.05992, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 7.29}
+COMPLETE {"run_id": "sage_lr_low", "model": "sage", "seed": 42, "seconds": 62.46022519998951, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.6252869367599487, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.6642201542854309, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}
+START sage_deeper
+{"run": "sage_deeper", "epoch": 1, "loss": 0.33054, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 10.43}
+{"run": "sage_deeper", "epoch": 2, "loss": 0.13286, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 9.15}
+{"run": "sage_deeper", "epoch": 3, "loss": 0.06833, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 9.79}
+{"run": "sage_deeper", "epoch": 4, "loss": 0.04029, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 11.11}
+{"run": "sage_deeper", "epoch": 5, "loss": 0.02663, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 15.36}
+{"run": "sage_deeper", "epoch": 6, "loss": 0.01898, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 12.77}
+{"run": "sage_deeper", "epoch": 7, "loss": 0.01387, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 8.93}
+{"run": "sage_deeper", "epoch": 8, "loss": 0.01056, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 11.06}
+{"run": "sage_deeper", "epoch": 9, "loss": 0.0082, "val_recall": 1.0, "val_auprc": 1.0, "seconds": 10.75}
+COMPLETE {"run_id": "sage_deeper", "model": "sage", "seed": 42, "seconds": 100.55776860000333, "validation": {"window": {"n": 2350, "tn": 1177, "fp": 0, "fn": 0, "tp": 1173, "threshold": 0.8308179974555969, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}, "recording": {"n": 25, "tn": 11, "fp": 0, "fn": 0, "tp": 14, "threshold": 0.8314182758331299, "recall": 1.0, "accuracy": 1.0, "precision": 1.0, "f1": 1.0, "fpr": 0.0, "specificity": 1.0, "balanced_accuracy": 1.0, "auroc": 1.0, "auprc": 1.0, "mcc": 1.0}}}

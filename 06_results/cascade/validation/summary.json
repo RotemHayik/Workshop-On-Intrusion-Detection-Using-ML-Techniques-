@@ -1,0 +1,206 @@
+{
+  "split": "validation",
+  "n": 2350,
+  "stage_two": 7,
+  "llm_requested": 2,
+  "llm_valid": 2,
+  "budget_fallback": 5,
+  "invalid_fallback": 0,
+  "llm_seconds": 82.22467530000722,
+  "metrics": {
+    "cascade": {
+      "window": {
+        "n": 2350,
+        "tn": 1177,
+        "fp": 0,
+        "fn": 0,
+        "tp": 1173,
+        "threshold": 0.5,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "recording": {
+        "n": 25,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 14,
+        "threshold": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "window_ci": {
+        "recall": [
+          1.0,
+          1.0
+        ],
+        "fpr": [
+          0.0,
+          0.0
+        ],
+        "precision": [
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0
+        ],
+        "accuracy": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "arbitrated": {
+      "window": {
+        "n": 2350,
+        "tn": 1177,
+        "fp": 0,
+        "fn": 0,
+        "tp": 1173,
+        "threshold": 0.5,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "recording": {
+        "n": 25,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 14,
+        "threshold": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "window_ci": {
+        "recall": [
+          1.0,
+          1.0
+        ],
+        "fpr": [
+          0.0,
+          0.0
+        ],
+        "precision": [
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0
+        ],
+        "accuracy": [
+          1.0,
+          1.0
+        ]
+      }
+    },
+    "production": {
+      "window": {
+        "n": 2350,
+        "tn": 1177,
+        "fp": 0,
+        "fn": 0,
+        "tp": 1173,
+        "threshold": 0.5,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "recording": {
+        "n": 25,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 14,
+        "threshold": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "window_ci": {
+        "recall": [
+          1.0,
+          1.0
+        ],
+        "fpr": [
+          0.0,
+          0.0
+        ],
+        "precision": [
+          1.0,
+          1.0
+        ],
+        "f1": [
+          1.0,
+          1.0
+        ],
+        "accuracy": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  },
+  "requested_edge_comparison": {
+    "n": 2,
+    "before_correct": 2,
+    "after_correct": 2,
+    "corrected": 0,
+    "harmed": 0
+  },
+  "valid_edge_comparison": {
+    "n": 2,
+    "before_correct": 2,
+    "after_correct": 2,
+    "corrected": 0,
+    "harmed": 0
+  }
+}

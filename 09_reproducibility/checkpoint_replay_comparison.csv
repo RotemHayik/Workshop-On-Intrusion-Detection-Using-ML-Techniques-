@@ -1,0 +1,11 @@
+run_id,split,n,max_score_difference,all_predictions_identical
+rf_base,test,2339,4.440892098500626e-16,True
+rf_base,external_test,7547,0.0,True
+if_base,test,2339,0.0,True
+if_base,external_test,7547,0.0,True
+bilstm_base,test,2339,0.0,True
+bilstm_base,external_test,7547,0.0,True
+sage_base,test,2339,0.0,True
+sage_base,external_test,7547,0.0,True
+if_no_volume_timing,test,2339,0.0,True
+if_no_volume_timing,external_test,7547,0.0,True

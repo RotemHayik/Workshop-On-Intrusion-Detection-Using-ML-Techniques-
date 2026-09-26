@@ -1,0 +1,61 @@
+﻿check,passed,observed,expected
+train_source_row_count,True,1401186,1401186
+train_source_group_count,True,134,134
+train_sample_alignment,True,10971,10971
+train_scaled_finite,True,0,0
+train_sequence_finite,True,0,0
+train_graph_finite,True,0,0
+train_mask_matches_window_count,True,1400742,1400742
+train_feature_count,True,52,52
+validation_source_row_count,True,300316,300316
+validation_source_group_count,True,28,28
+validation_sample_alignment,True,2350,2350
+validation_scaled_finite,True,0,0
+validation_sequence_finite,True,0,0
+validation_graph_finite,True,0,0
+validation_mask_matches_window_count,True,300091,300091
+validation_feature_count,True,52,52
+test_source_row_count,True,298815,298815
+test_source_group_count,True,28,28
+test_sample_alignment,True,2339,2339
+test_scaled_finite,True,0,0
+test_sequence_finite,True,0,0
+test_graph_finite,True,0,0
+test_mask_matches_window_count,True,298630,298630
+test_feature_count,True,52,52
+external_test_source_row_count,True,963389,963389
+external_test_source_group_count,True,77,77
+external_test_sample_alignment,True,7547,7547
+external_test_scaled_finite,True,0,0
+external_test_sequence_finite,True,0,0
+external_test_graph_finite,True,0,0
+external_test_mask_matches_window_count,True,963116,963116
+external_test_feature_count,True,52,52
+sample_id_overlap_train_validation,True,0,0
+sample_id_overlap_train_test,True,0,0
+sample_id_overlap_train_external_test,True,0,0
+sample_id_overlap_validation_test,True,0,0
+sample_id_overlap_validation_external_test,True,0,0
+sample_id_overlap_test_external_test,True,0,0
+train_no_raw_identity_in_tabular_predictors,True,none,none
+train_graph_pointer_integrity,True,10971,10971
+train_graph_edge_bounds,True,1277421,< 1277422
+train_sequence_shape,True,"(10971, 128, 15)","(10971, 128, 15)"
+validation_no_raw_identity_in_tabular_predictors,True,none,none
+validation_graph_pointer_integrity,True,2350,2350
+validation_graph_edge_bounds,True,282900,< 282901
+validation_sequence_shape,True,"(2350, 128, 15)","(2350, 128, 15)"
+test_no_raw_identity_in_tabular_predictors,True,none,none
+test_graph_pointer_integrity,True,2339,2339
+test_graph_edge_bounds,True,259038,< 259039
+test_sequence_shape,True,"(2339, 128, 15)","(2339, 128, 15)"
+external_test_no_raw_identity_in_tabular_predictors,True,none,none
+external_test_graph_pointer_integrity,True,7547,7547
+external_test_graph_edge_bounds,True,799014,< 799015
+external_test_sequence_shape,True,"(7547, 128, 15)","(7547, 128, 15)"
+split_group_overlap_train_validation,True,0,0
+split_group_overlap_train_test,True,0,0
+split_group_overlap_train_external_test,True,0,0
+split_group_overlap_validation_test,True,0,0
+split_group_overlap_validation_external_test,True,0,0
+split_group_overlap_test_external_test,True,0,0

@@ -1,0 +1,27 @@
+run_id,dimension,value,n,fp,fn,fpr,fnr
+sage_base,source_name,CTU_Normal_Benign,9,8,0,0.8888888888888888,
+sage_base,source_name,Itamar,379,0,0,,0.0
+sage_base,source_name,Nitsan,1546,0,79,0.0,0.21010638297872342
+sage_base,source_name,dns-tunnel-dataset-master - origin - Rotem,405,0,4,,0.009876543209876543
+sage_base,tool_label,RogueRobin_NET,47,0,0,,0.0
+sage_base,tool_label,RogueRobin_PS,269,0,0,,0.0
+sage_base,tool_label,Saitama,14,0,0,,0.0
+sage_base,tool_label,Symbiote,1,0,0,,0.0
+sage_base,tool_label,benign,1179,8,0,0.006785411365564037,
+sage_base,tool_label,dns2tcp,126,0,2,,0.015873015873015872
+sage_base,tool_label,dnscat2,77,0,2,,0.025974025974025976
+sage_base,tool_label,dnspot,118,0,0,,0.0
+sage_base,tool_label,iodine,382,0,79,,0.20680628272251309
+sage_base,tool_label,unknown,126,0,0,,0.0
+sage_base,scenario_type,benign_user_activity,9,8,0,0.8888888888888888,
+sage_base,scenario_type,c2,47,0,4,,0.0851063829787234
+sage_base,scenario_type,download,317,0,0,,0.0
+sage_base,scenario_type,file_transfer,358,0,0,,0.0
+sage_base,scenario_type,handshake,14,0,0,,0.0
+sage_base,scenario_type,upload,48,0,0,,0.0
+sage_base,scenario_type,nan,1546,0,79,0.0,0.21010638297872342
+sage_base,evaluation_subset,ctu_benign,9,8,0,0.8888888888888888,
+sage_base,evaluation_subset,standard_benign,1170,0,0,0.0,
+sage_base,evaluation_subset,standard_itamar,379,0,0,,0.0
+sage_base,evaluation_subset,standard_rotem,405,0,4,,0.009876543209876543
+sage_base,evaluation_subset,standard_tunnel,376,0,79,,0.21010638297872342

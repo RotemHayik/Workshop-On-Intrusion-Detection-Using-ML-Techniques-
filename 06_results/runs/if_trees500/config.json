@@ -1,0 +1,13 @@
+{
+  "run_id": "if_trees500",
+  "model": "if",
+  "seed": 42,
+  "parameters": {
+    "n_estimators": 500,
+    "max_samples": 256,
+    "max_features": 1.0,
+    "contamination": "auto",
+    "bootstrap": false,
+    "warm_start": false
+  }
+}

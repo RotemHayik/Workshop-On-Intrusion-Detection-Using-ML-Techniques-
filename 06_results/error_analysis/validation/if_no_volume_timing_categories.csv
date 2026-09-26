@@ -1,0 +1,26 @@
+run_id,dimension,value,n,fp,fn,fpr,fnr
+if_no_volume_timing,source_name,CTU_Normal_Benign,7,1,0,0.14285714285714285,
+if_no_volume_timing,source_name,Itamar,381,0,0,,0.0
+if_no_volume_timing,source_name,Nitsan,1538,0,0,0.0,0.0
+if_no_volume_timing,source_name,dns-tunnel-dataset-master - origin - Rotem,424,0,0,,0.0
+if_no_volume_timing,tool_label,RogueRobin_NET,1,0,0,,0.0
+if_no_volume_timing,tool_label,Saitama,39,0,0,,0.0
+if_no_volume_timing,tool_label,Symbiote,1,0,0,,0.0
+if_no_volume_timing,tool_label,Symbiote_DNSCat2,340,0,0,,0.0
+if_no_volume_timing,tool_label,benign,1177,1,0,0.0008496176720475786,
+if_no_volume_timing,tool_label,dns2tcp,115,0,0,,0.0
+if_no_volume_timing,tool_label,dnscat2,239,0,0,,0.0
+if_no_volume_timing,tool_label,dnspot,91,0,0,,0.0
+if_no_volume_timing,tool_label,iodine,323,0,0,,0.0
+if_no_volume_timing,tool_label,unknown,24,0,0,,0.0
+if_no_volume_timing,scenario_type,benign_user_activity,7,1,0,0.14285714285714285,
+if_no_volume_timing,scenario_type,c2,42,0,0,,0.0
+if_no_volume_timing,scenario_type,file_transfer,382,0,0,,0.0
+if_no_volume_timing,scenario_type,handshake,341,0,0,,0.0
+if_no_volume_timing,scenario_type,upload,40,0,0,,0.0
+if_no_volume_timing,scenario_type,nan,1538,0,0,0.0,0.0
+if_no_volume_timing,evaluation_subset,ctu_benign,7,1,0,0.14285714285714285,
+if_no_volume_timing,evaluation_subset,standard_benign,1170,0,0,0.0,
+if_no_volume_timing,evaluation_subset,standard_itamar,381,0,0,,0.0
+if_no_volume_timing,evaluation_subset,standard_rotem,424,0,0,,0.0
+if_no_volume_timing,evaluation_subset,standard_tunnel,368,0,0,,0.0

@@ -1,0 +1,27 @@
+split,run_id,source,error,error_windows,error_recordings,sample_id,tool,scenario,score,query_length,subdomain_entropy,domain_share,repeated_query_ratio,graph_nodes
+validation,bilstm_base,CTU Normal,FP,1,1,validation-1b0e6823506770e7-000002,benign,benign_user_activity,0.9900338,18.75,1.3001515230393403,0.296875,0.296875,104
+validation,if_base,CTU Normal,FP,7,1,validation-1b0e6823506770e7-000000,benign,benign_user_activity,0.7156388244184205,18.2265625,0.8842982078274826,0.09375,0.2578125,113
+validation,if_no_volume_timing,CTU Normal,FP,1,1,validation-1b0e6823506770e7-000005,benign,benign_user_activity,0.7536040254003418,20.8828125,1.6689985418733009,0.2109375,0.328125,110
+test,bilstm_base,Domainator,FN,1,1,test-d433efe048be85cf-000226,RogueRobin_PS,download,0.795484,25.8125,1.5163366874999995,0.421875,0.5390625,61
+test,bilstm_base,GraphTunnel,FN,9,1,test-7b6284040bf206e8-000011,iodine,,0.35543475,27.203125,3.071861237083833,1.0,0.0,131
+test,bilstm_base,DACA,FN,3,3,test-053a231bce4de358-000034,dnscat2,c2,0.972377,26.203125,1.960431712265625,0.5234375,0.7578125,41
+test,if_base,CTU Normal,FP,9,1,test-3f672216ed3a6d80-000000,benign,benign_user_activity,0.7410060679534419,25.4453125,1.269992823073876,0.0625,0.1875,162
+test,if_base,Domainator,FN,2,2,test-373112710b4e6b5f-000003,Saitama,handshake,0.6958122283840319,29.921875,2.551392296875001,0.921875,0.9609375,11
+test,if_base,GraphTunnel,FP,1,1,test-0e92119106de6a5e-000101,benign,,0.7487463886022508,21.6484375,1.542764567637848,0.2734375,0.3046875,112
+test,if_no_volume_timing,CTU Normal,FP,4,1,test-3f672216ed3a6d80-000000,benign,benign_user_activity,0.7419608413173807,25.4453125,1.269992823073876,0.0625,0.1875,162
+test,if_no_volume_timing,Domainator,FN,6,1,test-373112710b4e6b5f-000002,Saitama,handshake,0.7321337280149295,28.0390625,2.438877453125001,0.71875,0.9453125,15
+test,if_no_volume_timing,GraphTunnel,FP,1,1,test-0e92119106de6a5e-000101,benign,,0.7551325428453332,21.6484375,1.542764567637848,0.2734375,0.3046875,112
+test,if_no_volume_timing,DACA,FN,1,1,test-a7b4d2d6b99dc89b-000094,dns2tcp,file_transfer,0.7367647192394386,25.0,3.1019985782812496,1.0,0.5,69
+test,rf_base,Domainator,FN,4,1,test-373112710b4e6b5f-000000,Saitama,handshake,0.8152614916601512,26.15625,2.108225453125,0.921875,0.9765625,9
+test,sage_base,CTU Normal,FP,8,1,test-3f672216ed3a6d80-000000,benign,benign_user_activity,0.8088344,25.4453125,1.269992823073876,0.0625,0.1875,162
+test,sage_base,GraphTunnel,FN,79,1,test-7b6284040bf206e8-000002,iodine,,0.78136426,28.3984375,3.1695672246742106,1.0,0.0,131
+test,sage_base,DACA,FN,4,3,test-053a231bce4de358-000034,dnscat2,c2,0.74400234,26.203125,1.960431712265625,0.5234375,0.7578125,41
+external_test,bilstm_base,Domainator,FN,33,5,external_test-20501d428e9f610e-000000,RogueRobin_NET,download,0.25988042,19.9296875,1.542300375,0.5078125,0.78125,35
+external_test,bilstm_base,GraphTunnel,FN,35,5,external_test-3e3bd91540036f72-000114,AndIodine,,0.9788807,22.0,2.822744360347337,1.0,0.0,131
+external_test,if_base,Domainator,FN,17,2,external_test-995ca5e826b7b5ed-000001,iodine,keep_alive,0.6954513511623103,26.0,2.2619001718750003,1.0,0.0,131
+external_test,if_no_volume_timing,Domainator,FN,46,5,external_test-20501d428e9f610e-000000,RogueRobin_NET,download,0.7161077580754751,19.9296875,1.542300375,0.5078125,0.78125,35
+external_test,if_no_volume_timing,GraphTunnel,FN,16,1,external_test-f8c5c950f1112736-000002,unknown,,0.7330908972829756,24.375,3.012115486188442,1.0,0.03125,127
+external_test,rf_base,Domainator,FN,8,2,external_test-20501d428e9f610e-000001,RogueRobin_NET,download,0.8099683768696908,19.0,1.691606828125,0.6640625,0.8515625,32
+external_test,rf_base,GraphTunnel,FN,1,1,external_test-5c165a09483b1fb6-000056,wildcard_simulation,,0.8468248852086034,59.5859375,3.798191174922236,0.109375,0.484375,84
+external_test,sage_base,Domainator,FN,22,5,external_test-20501d428e9f610e-000000,RogueRobin_NET,download,0.7461103,19.9296875,1.542300375,0.5078125,0.78125,35
+external_test,sage_base,GraphTunnel,FN,10,6,external_test-061f8204c5a57354-000050,wildcard_simulation,,0.78173214,67.9765625,4.058886399797137,0.359375,0.6171875,58

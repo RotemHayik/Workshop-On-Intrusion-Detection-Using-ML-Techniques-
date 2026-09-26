@@ -1,0 +1,13 @@
+{
+  "registered_before_test": true,
+  "stage_one": "RF and IF agree, and RF probability <= 0.2 or >= 0.8: accept RF",
+  "stage_two": "Otherwise invoke BiLSTM and GraphSAGE and use the majority of RF, BiLSTM and GraphSAGE decisions at their frozen individual thresholds",
+  "edge_condition": "Every stage-two window is an LLM candidate, including IF disagreement or RF uncertainty",
+  "llm_budget_per_split": 32,
+  "llm_budget_per_recording": 2,
+  "budget_order": "ascending SHA256 of sample_id; independent of labels, source and errors",
+  "fallback": "Preserve the stage-two majority on budget exhaustion, timeout, invalid JSON or unsupported label",
+  "enable_rule": "Enable overriding only if Validation cascade plus LLM has FPR <= 1% and F1 >= cascade F1 and at least one valid response; otherwise retain local LLM as an evaluated shadow arbitrator",
+  "score": "Cascade decisions are binary operational scores, not calibrated probabilities; LLM override scores are likewise binary",
+  "llm": {"temperature": 0, "seed": 42, "max_tokens": 120, "request_timeout_seconds": 90, "context_tokens": 2048, "cpu_threads": 2}
+}

@@ -1,0 +1,27 @@
+run_id,dimension,value,n,fp,fn,fpr,fnr
+if_no_volume_timing,source_name,CTU_Normal_Benign,9,4,0,0.4444444444444444,
+if_no_volume_timing,source_name,Itamar,379,0,6,,0.0158311345646438
+if_no_volume_timing,source_name,Nitsan,1546,1,0,0.0008547008547008547,0.0
+if_no_volume_timing,source_name,dns-tunnel-dataset-master - origin - Rotem,405,0,1,,0.0024691358024691358
+if_no_volume_timing,tool_label,RogueRobin_NET,47,0,0,,0.0
+if_no_volume_timing,tool_label,RogueRobin_PS,269,0,0,,0.0
+if_no_volume_timing,tool_label,Saitama,14,0,6,,0.42857142857142855
+if_no_volume_timing,tool_label,Symbiote,1,0,0,,0.0
+if_no_volume_timing,tool_label,benign,1179,5,0,0.004240882103477523,
+if_no_volume_timing,tool_label,dns2tcp,126,0,1,,0.007936507936507936
+if_no_volume_timing,tool_label,dnscat2,77,0,0,,0.0
+if_no_volume_timing,tool_label,dnspot,118,0,0,,0.0
+if_no_volume_timing,tool_label,iodine,382,0,0,,0.0
+if_no_volume_timing,tool_label,unknown,126,0,0,,0.0
+if_no_volume_timing,scenario_type,benign_user_activity,9,4,0,0.4444444444444444,
+if_no_volume_timing,scenario_type,c2,47,0,0,,0.0
+if_no_volume_timing,scenario_type,download,317,0,0,,0.0
+if_no_volume_timing,scenario_type,file_transfer,358,0,1,,0.002793296089385475
+if_no_volume_timing,scenario_type,handshake,14,0,6,,0.42857142857142855
+if_no_volume_timing,scenario_type,upload,48,0,0,,0.0
+if_no_volume_timing,scenario_type,nan,1546,1,0,0.0008547008547008547,0.0
+if_no_volume_timing,evaluation_subset,ctu_benign,9,4,0,0.4444444444444444,
+if_no_volume_timing,evaluation_subset,standard_benign,1170,1,0,0.0008547008547008547,
+if_no_volume_timing,evaluation_subset,standard_itamar,379,0,6,,0.0158311345646438
+if_no_volume_timing,evaluation_subset,standard_rotem,405,0,1,,0.0024691358024691358
+if_no_volume_timing,evaluation_subset,standard_tunnel,376,0,0,,0.0

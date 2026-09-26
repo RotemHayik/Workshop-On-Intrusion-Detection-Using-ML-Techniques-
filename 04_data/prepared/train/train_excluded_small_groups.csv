@@ -1,0 +1,5 @@
+﻿split,split_group_id,transactions,reason
+train,Itamar|Symbiote_DNSCat2|handshake|symbiote-dnscat/symbiote-dnscat_handshake_240403.pcapng,5,fewer_than_32_transactions
+train,Itamar|Saitama|handshake|saitama/saitama_handshake_240223.pcapng,2,fewer_than_32_transactions
+train,Itamar|iodine|upload-ssh-rsa4096|iodine/iodine_upload-ssh-rsa4096_240731.pcapng,26,fewer_than_32_transactions
+train,Itamar|Symbiote_DNSCat2|upload-ssh-rsa4096|symbiote-dnscat/symbiote-dnscat_upload-ssh-rsa4096_240306.pcapng,29,fewer_than_32_transactions

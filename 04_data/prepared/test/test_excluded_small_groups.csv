@@ -1,0 +1,3 @@
+﻿split,split_group_id,transactions,reason
+test,Itamar|dnscat2|upload-ssh-ed25519|dnscat/dnscat_upload-ssh-ed25519_240731.pcapng,12,fewer_than_32_transactions
+test,Itamar|Symbiote_DNSCat2|upload-ssh-ed25519|symbiote-dnscat/symbiote-dnscat_upload-ssh-ed25519_240306.pcapng,5,fewer_than_32_transactions

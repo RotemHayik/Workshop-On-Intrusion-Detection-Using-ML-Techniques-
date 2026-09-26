@@ -1,0 +1,4 @@
+sample_id,transactions,all_52_features_match,max_absolute_difference
+validation-1b0e6823506770e7-000000,128,True,1.7763568394002505e-15
+validation-1b0e6823506770e7-000002,128,True,3.552713678800501e-15
+validation-1b0e6823506770e7-000005,128,True,1.7763568394002505e-15

@@ -1,0 +1,77 @@
+{
+  "query_name_len": {
+    "transformation": "log1p_robust",
+    "center": 3.091042453358316,
+    "iqr": 0.7282385003712157
+  },
+  "subdomain_len": {
+    "transformation": "log1p_robust",
+    "center": 2.0794415416798357,
+    "iqr": 2.70805020110221
+  },
+  "num_labels": {
+    "transformation": "log1p_robust",
+    "center": 1.3862943611198906,
+    "iqr": 0.2876820724517808
+  },
+  "max_label_len": {
+    "transformation": "log1p_robust",
+    "center": 2.3978952727983707,
+    "iqr": 0.7472144018302207
+  },
+  "query_entropy": {
+    "transformation": "robust",
+    "center": 3.55119117,
+    "iqr": 0.6741850710581478
+  },
+  "longest_subdomain_entropy": {
+    "transformation": "robust",
+    "center": 1.921928,
+    "iqr": 3.121928094887362
+  },
+  "long_consonant_string_count": {
+    "transformation": "log1p_robust",
+    "center": 0.0,
+    "iqr": 0.6931471805599453
+  },
+  "request_len": {
+    "transformation": "log1p_robust",
+    "center": 4.418840607796598,
+    "iqr": 0.2809023854664021
+  },
+  "request_payload_len": {
+    "transformation": "log1p_robust",
+    "center": 3.6888794541139363,
+    "iqr": 0.5596157879354231
+  },
+  "response_len": {
+    "transformation": "log1p_robust",
+    "center": 4.736198448394496,
+    "iqr": 1.3196029866212182
+  },
+  "response_payload_len": {
+    "transformation": "log1p_robust",
+    "center": 4.2626798770413155,
+    "iqr": 1.791759469228055
+  },
+  "total_transaction_bytes": {
+    "transformation": "log1p_robust",
+    "center": 5.288267030694535,
+    "iqr": 1.0175710786649832
+  },
+  "req_resp_time_diff": {
+    "transformation": "log1p_robust",
+    "center": 0.2097777626907787,
+    "iqr": 0.39063840646370424
+  },
+  "interarrival_time": {
+    "transformation": "log1p_robust",
+    "center": 0.030266372635787304,
+    "iqr": 0.10160640385416904
+  },
+  "is_response_missing": {
+    "transformation": "identity_clip_0_1",
+    "center": 0.0,
+    "iqr": 1.0
+  }
+}

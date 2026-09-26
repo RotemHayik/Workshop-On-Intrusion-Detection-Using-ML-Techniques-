@@ -1,0 +1,4 @@
+﻿split,split_group_id,transactions,reason
+validation,Itamar|dnscat2|handshake|dnscat/dnscat_handshake_240731.pcapng,8,fewer_than_32_transactions
+validation,Itamar|iodine|upload-ssh-ed25519|iodine/iodine_upload-ssh-ed25519_240731.pcapng,15,fewer_than_32_transactions
+validation,Itamar|RogueRobin_PS|roguerobin-ps_handshake|roguerobin-powershell/roguerobin-ps_handshake_240229.pcapng,2,fewer_than_32_transactions

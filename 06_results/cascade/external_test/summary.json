@@ -1,0 +1,170 @@
+{
+  "split": "external_test",
+  "n": 7547,
+  "stage_two": 61,
+  "llm_requested": 13,
+  "llm_valid": 13,
+  "budget_fallback": 48,
+  "invalid_fallback": 0,
+  "llm_seconds": 292.0222490999731,
+  "metrics": {
+    "cascade": {
+      "window": {
+        "n": 7547,
+        "tn": 0,
+        "fp": 0,
+        "fn": 16,
+        "tp": 7531,
+        "threshold": 0.5,
+        "recall": 0.9978799522989267,
+        "accuracy": null,
+        "precision": null,
+        "f1": null,
+        "fpr": null,
+        "specificity": null,
+        "balanced_accuracy": null,
+        "auroc": null,
+        "auprc": null,
+        "mcc": null
+      },
+      "recording": {
+        "n": 77,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "tp": 76,
+        "threshold": 1.0,
+        "recall": 0.987012987012987,
+        "accuracy": null,
+        "precision": null,
+        "f1": null,
+        "fpr": null,
+        "specificity": null,
+        "balanced_accuracy": null,
+        "auroc": null,
+        "auprc": null,
+        "mcc": null
+      },
+      "window_ci": {
+        "recall": [
+          0.9927274103275952,
+          1.0
+        ],
+        "fpr": null,
+        "precision": null,
+        "f1": null,
+        "accuracy": null
+      }
+    },
+    "arbitrated": {
+      "window": {
+        "n": 7547,
+        "tn": 0,
+        "fp": 0,
+        "fn": 13,
+        "tp": 7534,
+        "threshold": 0.5,
+        "recall": 0.998277461242878,
+        "accuracy": null,
+        "precision": null,
+        "f1": null,
+        "fpr": null,
+        "specificity": null,
+        "balanced_accuracy": null,
+        "auroc": null,
+        "auprc": null,
+        "mcc": null
+      },
+      "recording": {
+        "n": 77,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "tp": 76,
+        "threshold": 1.0,
+        "recall": 0.987012987012987,
+        "accuracy": null,
+        "precision": null,
+        "f1": null,
+        "fpr": null,
+        "specificity": null,
+        "balanced_accuracy": null,
+        "auroc": null,
+        "auprc": null,
+        "mcc": null
+      },
+      "window_ci": {
+        "recall": [
+          0.9940578193112589,
+          1.0
+        ],
+        "fpr": null,
+        "precision": null,
+        "f1": null,
+        "accuracy": null
+      }
+    },
+    "production": {
+      "window": {
+        "n": 7547,
+        "tn": 0,
+        "fp": 0,
+        "fn": 13,
+        "tp": 7534,
+        "threshold": 0.5,
+        "recall": 0.998277461242878,
+        "accuracy": null,
+        "precision": null,
+        "f1": null,
+        "fpr": null,
+        "specificity": null,
+        "balanced_accuracy": null,
+        "auroc": null,
+        "auprc": null,
+        "mcc": null
+      },
+      "recording": {
+        "n": 77,
+        "tn": 0,
+        "fp": 0,
+        "fn": 1,
+        "tp": 76,
+        "threshold": 1.0,
+        "recall": 0.987012987012987,
+        "accuracy": null,
+        "precision": null,
+        "f1": null,
+        "fpr": null,
+        "specificity": null,
+        "balanced_accuracy": null,
+        "auroc": null,
+        "auprc": null,
+        "mcc": null
+      },
+      "window_ci": {
+        "recall": [
+          0.9940578193112589,
+          1.0
+        ],
+        "fpr": null,
+        "precision": null,
+        "f1": null,
+        "accuracy": null
+      }
+    }
+  },
+  "requested_edge_comparison": {
+    "n": 13,
+    "before_correct": 9,
+    "after_correct": 12,
+    "corrected": 3,
+    "harmed": 0
+  },
+  "valid_edge_comparison": {
+    "n": 13,
+    "before_correct": 9,
+    "after_correct": 12,
+    "corrected": 3,
+    "harmed": 0
+  }
+}

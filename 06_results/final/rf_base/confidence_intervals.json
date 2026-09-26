@@ -1,0 +1,66 @@
+{
+  "test_window": {
+    "recall": [
+      0.9853543528749384,
+      1.0
+    ],
+    "fpr": [
+      0.0,
+      0.0
+    ],
+    "precision": [
+      1.0,
+      1.0
+    ],
+    "f1": [
+      0.9926231571071471,
+      1.0
+    ],
+    "accuracy": [
+      0.9939599467496626,
+      1.0
+    ]
+  },
+  "test_recording": {
+    "recall": [
+      1.0,
+      1.0
+    ],
+    "fpr": [
+      0.0,
+      0.0
+    ],
+    "precision": [
+      1.0,
+      1.0
+    ],
+    "f1": [
+      1.0,
+      1.0
+    ],
+    "accuracy": [
+      1.0,
+      1.0
+    ]
+  },
+  "external_test_window": {
+    "recall": [
+      0.9962946328373014,
+      1.0
+    ],
+    "fpr": null,
+    "precision": null,
+    "f1": null,
+    "accuracy": null
+  },
+  "external_test_recording": {
+    "recall": [
+      1.0,
+      1.0
+    ],
+    "fpr": null,
+    "precision": null,
+    "f1": null,
+    "accuracy": null
+  }
+}

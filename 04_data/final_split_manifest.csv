@@ -1,0 +1,268 @@
+split_group_id,source_name,traffic_label,original_split,assigned_evaluation_role,evaluation_subset,project_split_final,transactions
+Itamar|RogueRobin_NET|download|others/validation-sets/roguerobin-net_download-validation_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1820
+Itamar|RogueRobin_NET|idle|others/validation-sets/roguerobin-net_idle-validation_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,517
+Itamar|RogueRobin_NET|upload|others/validation-sets/roguerobin-net_upload-validation_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,629
+Itamar|RogueRobin_PS|download-fewer-rrs|others/validation-sets/roguerobin-ps_download-fewer-rrs-validation_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1265
+Itamar|RogueRobin_PS|download_short-2|others/validation-sets/roguerobin-ps_download-validation-short-2_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,99
+Itamar|RogueRobin_PS|download_short|others/validation-sets/roguerobin-ps_download-validation-short_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,112
+Itamar|RogueRobin_PS|idle|others/validation-sets/roguerobin-ps_idle-validation_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,880
+Itamar|RogueRobin_PS|upload-fewer-chars|others/validation-sets/roguerobin-ps_upload-fewer-chars-validation_240925.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,998
+Itamar|Saitama|upload|others/validation-sets/saitama_upload-validation_241008.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,348
+Itamar|Symbiote|download-large_transfer|others/validation-sets/symbiote_download-large-validation-transfer_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,5103
+Itamar|Symbiote|download-small_transfer|others/validation-sets/symbiote_download-small-validation-transfer_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,54
+Itamar|Symbiote|upload-rsa1024|others/validation-sets/symbiote_upload-rsa1024-validation_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,146
+Itamar|dnscat2|download_nopw_long-1|others/validation-sets/dnscat_download-validation_nopw_long-1_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,328
+Itamar|dnscat2|download_nopw_longlong|others/validation-sets/dnscat_download-validation_nopw_longlong_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,569
+Itamar|dnscat2|download_pw_longlong|others/validation-sets/dnscat_download-validation_pw_longlong_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,647
+Itamar|dnscat2|download_pw_long|others/validation-sets/dnscat_download-validation_pw_long_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,323
+Itamar|dnscat2|idle_nopw_MX|others/validation-sets/dnscat_idle-validation_nopw_MX_241001.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1582
+Itamar|dnscat2|idle_pw_A|others/validation-sets/dnscat_idle-validation_pw_A_241001.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1829
+Itamar|dnscat2|idle_pw_CNAME|others/validation-sets/dnscat_idle-validation_pw_CNAME_241001.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,2189
+Itamar|dnscat2|upload_nopw_longlong|others/validation-sets/dnscat_upload-validation_nopw_longlong_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,590
+Itamar|dnscat2|upload_nopw_long|others/validation-sets/dnscat_upload-validation_nopw_long_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,328
+Itamar|dnscat2|upload_pw_longlong|others/validation-sets/dnscat_upload-validation_pw_longlong_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,805
+Itamar|dnscat2|upload_pw_long|others/validation-sets/dnscat_upload-validation_pw_long_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,340
+Itamar|iodine|download_nopw_long_m100|others/validation-sets/iodine_download-validation_nopw_long_m100_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,138
+Itamar|iodine|download_nopw_long_m150|others/validation-sets/iodine_download-validation_nopw_long_m150_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,138
+Itamar|iodine|download_nopw_long_m200|others/validation-sets/iodine_download-validation_nopw_long_m200_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,84
+Itamar|iodine|download_nopw_long_m255|others/validation-sets/iodine_download-validation_nopw_long_m255_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,74
+Itamar|iodine|idle-A|others/validation-sets/iodine_idle-A-validation_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1926
+Itamar|iodine|idle-password-TXT|others/validation-sets/iodine_idle-password-TXT-validation_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1908
+Itamar|iodine|idle-password|others/validation-sets/iodine_idle-password-validation_241002.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,1881
+Itamar|iodine|upload_nopw_long_m150|others/validation-sets/iodine_upload-validation_nopw_long_m150_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,157
+Itamar|iodine|upload_nopw_long_m200|others/validation-sets/iodine_upload-validation_nopw_long_m200_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,113
+Itamar|iodine|upload_nopw_long_m255|others/validation-sets/iodine_upload-validation_nopw_long_m255_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,85
+Itamar|iodine|upload_nopw_longlong_m100|others/validation-sets/iodine_upload-validation_nopw_longlong_m100_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,436
+Itamar|iodine|upload_nopw_longlong_m150|others/validation-sets/iodine_upload-validation_nopw_longlong_m150_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,262
+Itamar|iodine|upload_nopw_longlong_m200|others/validation-sets/iodine_upload-validation_nopw_longlong_m200_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,209
+Itamar|iodine|upload_nopw_longlong_m255|others/validation-sets/iodine_upload-validation_nopw_longlong_m255_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,163
+Itamar|iodine|upload_nopw_long|others/validation-sets/iodine_upload-validation_nopw_long_241017.pcapng,Itamar,malicious,validation,external_test,itamar_validation,external_test,231
+AndIodine-CNAME.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,18816
+AndIodine-MX.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,15141
+AndIodine-MX_00000_20230921190552.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,15004
+AndIodine-MX_00001_20230921200640.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,137
+AndIodine-NULL.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,7330
+AndIodine-SRV.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,14757
+AndIodine-SRV_00000_20230921180206.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,14757
+AndIodine-TXT.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,10181
+AndIodine-TXT_00000_20230921154041.pcap,Nitsan,malicious,none,external_test,cross_endpoint,external_test,10181
+cobalstrike.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,13031
+dns2tcp-key.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,34555
+dns2tcp-txt.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,12883
+ozymandns.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,8663
+tcp-over-dns-CNAME.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,133839
+tcp-over-dns-CNAME_00000_20230904131341.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19546
+tcp-over-dns-CNAME_00001_20230904134849.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19676
+tcp-over-dns-CNAME_00002_20230904142315.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19682
+tcp-over-dns-CNAME_00003_20230904145742.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19670
+tcp-over-dns-CNAME_00004_20230904153208.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19635
+tcp-over-dns-CNAME_00005_20230904160642.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19636
+tcp-over-dns-CNAME_00006_20230904164115.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,15994
+tcp-over-dns-TXT.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,72972
+tcp-over-dns-TXT_00000_20230904110014.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19408
+tcp-over-dns-TXT_00001_20230904113545.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19404
+tcp-over-dns-TXT_00002_20230904121104.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,19633
+tcp-over-dns-TXT_00003_20230904124537.pcap,Nitsan,malicious,none,external_test,unknown_tool,external_test,14527
+wildcard_00000_20231011215521.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,24901
+wildcard_00001_20231011215715.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,26015
+wildcard_00002_20231011220330.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,25548
+wildcard_00003_20231011220812.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,32860
+wildcard_00004_20231011221109.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,29871
+wildcard_00005_20231011221350.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,27511
+wildcard_00006_20231011221701.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,23861
+wildcard_00007_20231011221737.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,23516
+wildcard_00008_20231011222232.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,25948
+wildcard_00009_20231011222825.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,29451
+wildcard_00010_20231011222958.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,26904
+wildcard_00011_20231011223332.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,27621
+wildcard_00012_20231011223819.pcap,Nitsan,malicious,none,external_test,wildcard,external_test,21018
+CTU_Normal_Benign|CTU-Normal-12,CTU_Normal_Benign,benign,none,development_pool,ctu_benign,test,1075
+Itamar|RogueRobin_NET|upload-big|roguerobin-net/roguerobin-net_upload-big_240308.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,6011
+Itamar|RogueRobin_PS|roguerobin-ps_download|roguerobin-powershell/roguerobin-ps_download_240306.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,34341
+Itamar|Saitama|handshake-offline|saitama/saitama_handshake-offline_240223.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,1732
+Itamar|Symbiote_DNSCat2|upload-ssh-ed25519|symbiote-dnscat/symbiote-dnscat_upload-ssh-ed25519_240306.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,5
+Itamar|Symbiote|upload-ssh-rsa4096|symbiote/symbiote_upload-ssh-rsa4096_240306.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,113
+Itamar|dnscat2|upload-ssh-ed25519|dnscat/dnscat_upload-ssh-ed25519_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,12
+Itamar|iodine|download|iodine/iodine_download_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,test,6065
+dns2tcp-key_00000_20230905071738.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,test,16069
+dnscat2-cname_00001_20230903170247.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,test,4774
+dnspot_00000_20230909155901.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,test,15026
+iodine-a.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,test,11979
+normal_00011_20230805202204.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14993
+normal_00016_20230805211220.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14985
+normal_00019_20230805214304.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14993
+normal_00024_20230805222144.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14985
+normal_00034_20230806105420.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14985
+normal_00035_20230806110151.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14989
+normal_00052_20230806131440.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14995
+normal_00058_20230806140330.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14994
+normal_00065_20230806150519.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14986
+normal_00066_20230806151305.pcap,Nitsan,benign,none,development_pool,standard_benign,test,14995
+16985c987adf046c5af25fa918803186,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,test,4975
+1cacd366f2f1fc2d48296a7255c7d15d,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,test,26726
+30699cb6ba13a1287b467a65960a6225,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,test,457
+389ebab895f207b4632338f1881c7620,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,test,3950
+67b710bfbc3799f873115ad207c0cda9,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,test,15132
+8b6f3296c0e6a0374a2d9821db100327,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,test,473
+CTU_Normal_Benign|CTU-Normal-4,CTU_Normal_Benign,benign,none,development_pool,ctu_benign,train,3029
+Itamar|RogueRobin_NET|download|roguerobin-net/roguerobin-net_download_240327.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,21371
+Itamar|RogueRobin_NET|handshake-fakenet|roguerobin-net/roguerobin-net_handshake-fakenet_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,141
+Itamar|RogueRobin_NET|handshake-offline|roguerobin-net/roguerobin-net_handshake-offline_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,1521
+Itamar|RogueRobin_NET|idle-no-handshake|roguerobin-net/roguerobin-net_idle-no-handshake_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,9150
+Itamar|RogueRobin_NET|upload-ssh-ed25519|roguerobin-net/roguerobin-net_upload-ssh-ed25519_240319.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,189
+Itamar|RogueRobin_NET|upload-ssh-rsa4096|roguerobin-net/roguerobin-net_upload-ssh-rsa4096_240308.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,988
+Itamar|RogueRobin_PS|roguerobin-ps_handshake-fakenet|roguerobin-powershell/roguerobin-ps_handshake-fakenet_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,184
+Itamar|RogueRobin_PS|roguerobin-ps_handshake-offline|roguerobin-powershell/roguerobin-ps_handshake-offline_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,1112
+Itamar|RogueRobin_PS|roguerobin-ps_idle-no-handshake|roguerobin-powershell/roguerobin-ps_idle-no-handshake_240305.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,18483
+Itamar|RogueRobin_PS|roguerobin-ps_upload-big|roguerobin-powershell/roguerobin-ps_upload-big_240228.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,1756
+Itamar|RogueRobin_PS|roguerobin-ps_upload-ssh-ed25519|roguerobin-powershell/roguerobin-ps_upload-ssh-ed25519_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,60
+Itamar|RogueRobin_PS|roguerobin-ps_upload-ssh-rsa4096|roguerobin-powershell/roguerobin-ps_upload-ssh-rsa4096_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,331
+Itamar|Saitama|download|saitama/saitama_download_240226.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,2705
+Itamar|Saitama|handshake-fakenet|saitama/saitama_handshake-fakenet_240223.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,141
+Itamar|Saitama|handshake|saitama/saitama_handshake_240223.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,2
+Itamar|Saitama|idle-no-handshake|saitama/saitama_idle-no-handshake_240223.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,2387
+Itamar|Saitama|upload-ssh-ed25519|saitama/saitama_upload-ssh-ed25519_240223.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,127
+Itamar|Saitama|upload-ssh-rsa4096|saitama/saitama_upload-ssh-rsa4096_240226.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,927
+Itamar|Symbiote_DNSCat2|download|symbiote-dnscat/symbiote-dnscat_download_240403.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,29953
+Itamar|Symbiote_DNSCat2|handshake-fakenet|symbiote-dnscat/symbiote-dnscat_handshake-fakenet_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,87
+Itamar|Symbiote_DNSCat2|handshake-offline|symbiote-dnscat/symbiote-dnscat_handshake-offline_240403.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,62
+Itamar|Symbiote_DNSCat2|handshake|symbiote-dnscat/symbiote-dnscat_handshake_240403.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,5
+Itamar|Symbiote_DNSCat2|upload-big|symbiote-dnscat/symbiote-dnscat_upload-big_240306.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,165
+Itamar|Symbiote_DNSCat2|upload-ssh-rsa4096|symbiote-dnscat/symbiote-dnscat_upload-ssh-rsa4096_240306.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,29
+Itamar|Symbiote|download|symbiote/symbiote_download_240403.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,7138
+Itamar|dnscat2|download|dnscat/dnscat_download_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,37568
+Itamar|dnscat2|handshake-fakenet|dnscat/dnscat_handshake-fakenet_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,34
+Itamar|dnscat2|handshake-offline|dnscat/dnscat_handshake-offline_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,36
+Itamar|dnscat2|idle-no-handshake|dnscat/dnscat_idle-no-handshake_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,42924
+Itamar|dnscat2|upload-big|dnscat/dnscat_upload-big_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,182
+Itamar|dnscat2|upload-ssh-rsa4096|dnscat/dnscat_upload-ssh-rsa4096_31072024.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,37
+Itamar|iodine|handshake-fakenet|iodine/iodine_handshake-fakenet_240904.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,35
+Itamar|iodine|handshake-offline|iodine/iodine_handshake-offline_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,42
+Itamar|iodine|handshake|iodine/iodine_handshake_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,32
+Itamar|iodine|idle-no-handshake|iodine/iodine_idle-no-handshake_240802.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,43203
+Itamar|iodine|upload-big|iodine/iodine_upload-big_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,94
+Itamar|iodine|upload-ssh-rsa4096|iodine/iodine_upload-ssh-rsa4096_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,train,26
+DNS-shell.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,21855
+dns2tcp-key_00001_20230905084724.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,15449
+dnscat2-cname.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,19775
+dnscat2-cname_00000_20230903155637.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,15001
+dnscat2-mx_00000_20230903185519.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,15001
+dnscat2-mx_00001_20230903195756.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,10686
+dnscat2-txt.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,18976
+dnscat2-txt_00000_20230903173121.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,15001
+dnscat2-txt_00001_20230903183304.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,3975
+dnspot.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,26687
+iodine-NULL.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,6512
+iodine-cname.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,9089
+iodine-mx.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,9645
+iodine-private.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,6317
+iodine-srv.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,8866
+normal_00000_20230805150331.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14863
+normal_00001_20230805152732.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14861
+normal_00002_20230805155315.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14839
+normal_00003_20230805162300.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14970
+normal_00005_20230805173251.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14977
+normal_00006_20230805193455.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14960
+normal_00007_20230805194417.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14979
+normal_00008_20230805195347.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14970
+normal_00009_20230805200318.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14979
+normal_00012_20230805204207.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14960
+normal_00013_20230805204920.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14973
+normal_00014_20230805205702.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14981
+normal_00015_20230805210440.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14970
+normal_00020_20230805215042.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14974
+normal_00021_20230805215807.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14980
+normal_00023_20230805221350.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14984
+normal_00025_20230805222942.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14973
+normal_00026_20230806094925.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14973
+normal_00027_20230806095642.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14953
+normal_00028_20230806100400.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14966
+normal_00029_20230806101125.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14981
+normal_00030_20230806101852.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14982
+normal_00032_20230806103352.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14984
+normal_00033_20230806104653.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14977
+normal_00036_20230806110924.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14980
+normal_00037_20230806111651.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14980
+normal_00039_20230806113145.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14978
+normal_00040_20230806114153.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14935
+normal_00041_20230806114902.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14957
+normal_00042_20230806115543.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14932
+normal_00043_20230806120251.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14941
+normal_00044_20230806121012.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14970
+normal_00047_20230806123846.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14977
+normal_00048_20230806124619.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14938
+normal_00049_20230806125329.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14953
+normal_00050_20230806130025.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14943
+normal_00051_20230806130724.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14981
+normal_00053_20230806132202.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14970
+normal_00054_20230806133254.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14969
+normal_00055_20230806134019.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14964
+normal_00056_20230806134743.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14968
+normal_00057_20230806135504.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14974
+normal_00060_20230806142107.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14984
+normal_00061_20230806143445.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14962
+normal_00062_20230806144212.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14976
+normal_00063_20230806144951.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14979
+normal_00064_20230806145733.pcap,Nitsan,benign,none,development_pool,standard_benign,train,14974
+normal_00067_20230806152800.pcap,Nitsan,benign,none,development_pool,standard_benign,train,1247
+tuns.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,train,18525
+0764e849bc26276d2f656413d71e9fef,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,14201
+086b5bcc5a0d0422980bde57f25a2bb1,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,3944
+09b03c539f963624b7169f7a641f0d1e,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,22985
+10194c4889fb8a4d18459e1722ce6677,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,376
+2275702da591239c9333856d2d075398,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,23011
+3ead8613795ed507cbb7164e0ff8a038,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,252
+4af8dcc310fba2b8745e5818968a84b4,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,3934
+5b083e43705fc4bc4b8bc20d8314ef7b,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,244
+641dc9781fe4d6d65ca9b445c4d41d0f,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,361
+6892133f5e90a52a915ffb0952ac621e,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,226
+6d59436e2eb763042cac74e864423b0f,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,8181
+7101f8927b5e169709bd69f0747f0f2d,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,347
+74ca6f3473b225ffe3bb0e2a0266c001,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,14856
+78e4e15ea053492cd7543b3e3ad1982d,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,15116
+794768c79b2feb0114b2343a95594b24,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,4814
+8c2ef973a2d27a2c4581f347aa196b5b,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,4872
+958858b9cbc9f45a3e20a5cd9b4c6b21,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,413
+997beadcd2a1ac5ac32612d628bb6737,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,7913
+a99fe827bdd2c4377e314b1403b1b288,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,22982
+aa5cbd34f50b2056b0b974bafe0fb84a,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,22962
+ae17f7537a1f1ab172bfe7ff97b12484,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,280
+af88c701c4dea95b51e33748eafb76ab,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,230
+b4ece1d179c73c8be619aeb8fed2d2f9,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,401
+c582d0fd2a026976d15daaa854015998,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,14209
+e3f5b40c63031044c726c13e1a2b5938,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,374
+e42ff3f6df0dcf6f67ceff5389b27ac5,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,14866
+ebd2d4ba4fe2b58b8c20ead9f524eeb7,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,234
+f1fc55ff66384c71045f20b81200adde,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,7813
+f5077e57457b37061d2b9e765ba6a790,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,7974
+fa9a2382cd59a5427af30e882b156635,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,8044
+fb4336bf7d402dcf5629ca9e17c02d70,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,14851
+fe12f2ca1faf878899151f08e2248d2c,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,train,7863
+CTU_Normal_Benign|CTU-Normal-6,CTU_Normal_Benign,benign,none,development_pool,ctu_benign,validation,860
+Itamar|RogueRobin_NET|handshake|roguerobin-net/roguerobin-net_handshake_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,41
+Itamar|RogueRobin_PS|roguerobin-ps_handshake|roguerobin-powershell/roguerobin-ps_handshake_240229.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,2
+Itamar|Saitama|upload-big|saitama/saitama_upload-big_240226.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,4959
+Itamar|Symbiote_DNSCat2|idle-no-handshake|symbiote-dnscat/symbiote-dnscat_idle-no-handshake_240808.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,43463
+Itamar|Symbiote|upload-ssh-ed25519|symbiote/symbiote_upload-ssh-ed25519_240306.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,113
+Itamar|dnscat2|handshake|dnscat/dnscat_handshake_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,8
+Itamar|iodine|upload-ssh-ed25519|iodine/iodine_upload-ssh-ed25519_240731.pcapng,Itamar,malicious,none,development_pool,standard_itamar,validation,15
+dns2tcp-key_00002_20230905100101.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,validation,3037
+dnscat2-mx.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,validation,25687
+dnspot_00001_20230909170527.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,validation,11661
+iodine-txt.pcap,Nitsan,malicious,none,development_pool,standard_tunnel,validation,6562
+normal_00004_20230805165638.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14992
+normal_00010_20230805201245.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14990
+normal_00017_20230805211952.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14999
+normal_00018_20230805212730.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14998
+normal_00022_20230805220555.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14991
+normal_00031_20230806102617.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14997
+normal_00038_20230806112421.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14997
+normal_00045_20230806121741.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14991
+normal_00046_20230806122528.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,14992
+normal_00059_20230806141220.pcap,Nitsan,benign,none,development_pool,standard_benign,validation,15000
+0882c3ac85644b94c860a38161abc69e,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,validation,22958
+55db4c68c292a14ff92dd9f5fb712b01,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,validation,208
+833c16e0c082100518d4a3a200b822c2,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,validation,224
+89459fcbc4852e0825c28fb19f87f8de,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,validation,14176
+d97c51a1e22814b0860e7d113d4f9a46,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,validation,11601
+fc899f00ea4ff7d76f75598fcf67caf6,dns-tunnel-dataset-master - origin - Rotem,malicious,none,development_pool,standard_rotem,validation,4794

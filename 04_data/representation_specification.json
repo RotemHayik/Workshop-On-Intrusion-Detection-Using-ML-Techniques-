@@ -1,0 +1,163 @@
+{
+  "sample_unit": {
+    "window_size": 128,
+    "minimum_partial_window": 32,
+    "overlap": 0,
+    "boundary": "split_group_id",
+    "max_windows_per_group": null
+  },
+  "tabular": {
+    "features": [
+      "query_name_len_mean",
+      "query_name_len_std",
+      "query_name_len_p95",
+      "subdomain_len_mean",
+      "subdomain_len_std",
+      "subdomain_len_p95",
+      "num_labels_mean",
+      "num_labels_std",
+      "num_labels_p95",
+      "max_label_len_mean",
+      "max_label_len_p95",
+      "query_entropy_mean",
+      "query_entropy_std",
+      "query_entropy_p95",
+      "high_query_entropy_ratio",
+      "longest_subdomain_entropy_mean",
+      "longest_subdomain_entropy_p95",
+      "high_subdomain_entropy_ratio",
+      "long_consonant_count_mean",
+      "long_consonant_positive_ratio",
+      "transaction_bytes_mean",
+      "transaction_bytes_std",
+      "transaction_bytes_p95",
+      "request_payload_mean",
+      "response_payload_mean",
+      "response_missing_ratio",
+      "response_time_median",
+      "response_time_std",
+      "response_time_p95",
+      "unique_base_domain_ratio",
+      "top_base_domain_share",
+      "unique_subdomain_ratio",
+      "repeated_query_ratio",
+      "iat_mean",
+      "iat_std",
+      "iat_median",
+      "iat_p95",
+      "iat_cv",
+      "adjacent_subdomain_jaro_winkler_mean",
+      "qtype_a_ratio",
+      "qtype_aaaa_ratio",
+      "qtype_cname_ratio",
+      "qtype_txt_ratio",
+      "qtype_mx_ratio",
+      "qtype_null_ratio",
+      "qtype_private_ratio",
+      "qtype_other_ratio",
+      "rcode_noerror_ratio",
+      "rcode_nxdomain_ratio",
+      "rcode_servfail_ratio",
+      "rcode_null_ratio",
+      "rcode_other_ratio"
+    ],
+    "feature_count": 52,
+    "raw_identity_fields_in_predictors": []
+  },
+  "sequence": {
+    "shape": [
+      128,
+      15
+    ],
+    "continuous_channels": [
+      "query_name_len",
+      "subdomain_len",
+      "num_labels",
+      "max_label_len",
+      "query_entropy",
+      "longest_subdomain_entropy",
+      "long_consonant_string_count",
+      "request_len",
+      "request_payload_len",
+      "response_len",
+      "response_payload_len",
+      "total_transaction_bytes",
+      "req_resp_time_diff",
+      "interarrival_time",
+      "is_response_missing"
+    ],
+    "categorical_channels": [
+      "qtype_id",
+      "rcode_id"
+    ],
+    "padding_mask": true,
+    "qtype_vocab": {
+      "PAD": 0,
+      "UNK": 1,
+      "A": 2,
+      "AAAA": 3,
+      "CNAME": 4,
+      "TXT": 5,
+      "MX": 6,
+      "NULL": 7,
+      "PRIVATE": 8,
+      "NS": 9,
+      "SOA": 10,
+      "PTR": 11,
+      "KEY": 12,
+      "SRV": 13,
+      "SVCB": 14,
+      "HTTPS": 15,
+      "ANY": 16
+    },
+    "rcode_vocab": {
+      "PAD": 0,
+      "UNK": 1,
+      "NOERROR": 2,
+      "NXDOMAIN": 3,
+      "SERVFAIL": 4,
+      "REFUSED": 5,
+      "FORMERR": 6,
+      "NOTIMP": 7,
+      "NULL": 8
+    }
+  },
+  "graph": {
+    "node_types": [
+      "client",
+      "dns_server",
+      "base_domain",
+      "subdomain"
+    ],
+    "edge_types": [
+      "client_dns_server",
+      "client_base_domain",
+      "base_domain_subdomain"
+    ],
+    "node_features": [
+      "type_client",
+      "type_dns_server",
+      "type_base_domain",
+      "type_subdomain",
+      "activity_ratio",
+      "mean_scaled_query_name_len",
+      "mean_scaled_subdomain_len",
+      "mean_scaled_query_entropy",
+      "mean_scaled_transaction_bytes",
+      "response_missing_ratio",
+      "degree_ratio",
+      "qtype_a_ratio",
+      "tunnel_associated_qtype_ratio"
+    ],
+    "edge_features": [
+      "type_client_dns_server",
+      "type_client_base_domain",
+      "type_base_domain_subdomain",
+      "interaction_ratio",
+      "mean_scaled_transaction_bytes",
+      "mean_scaled_response_time"
+    ],
+    "raw_identity_fields_in_predictors": [],
+    "note": "Raw endpoint/domain strings are used only to construct within-window topology and are not stored as model features. This is a project proxy graph because recursive resolver paths from GraphTunnel are unavailable in the unified schema."
+  }
+}

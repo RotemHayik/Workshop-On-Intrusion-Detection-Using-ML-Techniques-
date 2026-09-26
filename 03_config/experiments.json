@@ -1,0 +1,286 @@
+[
+  {
+    "run_id": "rf_base",
+    "model": "rf",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "criterion": "gini",
+      "max_depth": 12,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "min_weight_fraction_leaf": 0.0,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "bootstrap": true,
+      "oob_score": false,
+      "class_weight": null,
+      "ccp_alpha": 0.0,
+      "max_samples": null,
+      "warm_start": false
+    },
+    "balance": "recording_class"
+  },
+  {
+    "run_id": "rf_depth20",
+    "model": "rf",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "criterion": "gini",
+      "max_depth": 20,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "min_weight_fraction_leaf": 0.0,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "bootstrap": true,
+      "oob_score": false,
+      "class_weight": null,
+      "ccp_alpha": 0.0,
+      "max_samples": null,
+      "warm_start": false
+    },
+    "balance": "recording_class"
+  },
+  {
+    "run_id": "rf_leaf10",
+    "model": "rf",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "criterion": "gini",
+      "max_depth": 12,
+      "min_samples_split": 2,
+      "min_samples_leaf": 10,
+      "min_weight_fraction_leaf": 0.0,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "bootstrap": true,
+      "oob_score": false,
+      "class_weight": null,
+      "ccp_alpha": 0.0,
+      "max_samples": null,
+      "warm_start": false
+    },
+    "balance": "recording_class"
+  },
+  {
+    "run_id": "rf_trees500",
+    "model": "rf",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 500,
+      "criterion": "gini",
+      "max_depth": 12,
+      "min_samples_split": 2,
+      "min_samples_leaf": 5,
+      "min_weight_fraction_leaf": 0.0,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "bootstrap": true,
+      "oob_score": false,
+      "class_weight": null,
+      "ccp_alpha": 0.0,
+      "max_samples": null,
+      "warm_start": false
+    },
+    "balance": "recording_class"
+  },
+  {
+    "run_id": "if_base",
+    "model": "if",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "max_samples": 256,
+      "max_features": 1.0,
+      "contamination": "auto",
+      "bootstrap": false,
+      "warm_start": false
+    }
+  },
+  {
+    "run_id": "if_samples1024",
+    "model": "if",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "max_samples": 1024,
+      "max_features": 1.0,
+      "contamination": "auto",
+      "bootstrap": false,
+      "warm_start": false
+    }
+  },
+  {
+    "run_id": "if_features_half",
+    "model": "if",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "max_samples": 256,
+      "max_features": 0.5,
+      "contamination": "auto",
+      "bootstrap": false,
+      "warm_start": false
+    }
+  },
+  {
+    "run_id": "if_trees500",
+    "model": "if",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 500,
+      "max_samples": 256,
+      "max_features": 1.0,
+      "contamination": "auto",
+      "bootstrap": false,
+      "warm_start": false
+    }
+  },
+  {
+    "run_id": "bilstm_base",
+    "model": "bilstm",
+    "seed": 42,
+    "parameters": {
+      "hidden": 32,
+      "layers": 1,
+      "dropout": 0.2
+    },
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "bilstm_width64",
+    "model": "bilstm",
+    "seed": 42,
+    "parameters": {
+      "hidden": 64,
+      "layers": 1,
+      "dropout": 0.2
+    },
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "bilstm_lr_low",
+    "model": "bilstm",
+    "seed": 42,
+    "parameters": {
+      "hidden": 32,
+      "layers": 1,
+      "dropout": 0.2
+    },
+    "batch_size": 64,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "bilstm_deeper",
+    "model": "bilstm",
+    "seed": 42,
+    "parameters": {
+      "hidden": 32,
+      "layers": 2,
+      "dropout": 0.2
+    },
+    "batch_size": 64,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "sage_base",
+    "model": "sage",
+    "seed": 42,
+    "parameters": {
+      "hidden": 32,
+      "layers": 2,
+      "dropout": 0.2,
+      "pooling": "mean"
+    },
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "sage_width64",
+    "model": "sage",
+    "seed": 42,
+    "parameters": {
+      "hidden": 64,
+      "layers": 2,
+      "dropout": 0.2,
+      "pooling": "mean"
+    },
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "sage_lr_low",
+    "model": "sage",
+    "seed": 42,
+    "parameters": {
+      "hidden": 32,
+      "layers": 2,
+      "dropout": 0.2,
+      "pooling": "mean"
+    },
+    "batch_size": 32,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  },
+  {
+    "run_id": "sage_deeper",
+    "model": "sage",
+    "seed": 42,
+    "parameters": {
+      "hidden": 32,
+      "layers": 3,
+      "dropout": 0.2,
+      "pooling": "mean"
+    },
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "max_epochs": 24,
+    "patience": 8,
+    "min_delta": 1e-05,
+    "gradient_clip": 1.0
+  }
+]

@@ -1,0 +1,17 @@
+{
+  "model": "Qwen2.5-1.5B-Instruct",
+  "quantization": "Q4_K_M",
+  "repository": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+  "revision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+  "runtime": "llama.cpp b10819 Windows CPU x64",
+  "context": 2048,
+  "threads": 2,
+  "host": "127.0.0.1",
+  "port": 8765,
+  "license_urls": {
+    "QWEN_LICENSE.txt": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/raw/91cad51170dc346986eccefdc2dd33a9da36ead9/LICENSE",
+    "QWEN_MODEL_CARD.md": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct-GGUF/raw/91cad51170dc346986eccefdc2dd33a9da36ead9/README.md",
+    "LLAMA_CPP_LICENSE.txt": "https://raw.githubusercontent.com/ggml-org/llama.cpp/b10819/LICENSE"
+  },
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e"
+}

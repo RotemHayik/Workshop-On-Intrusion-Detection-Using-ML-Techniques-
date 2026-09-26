@@ -1,0 +1,11 @@
+EVALUATED rf_base test rows 2339
+EVALUATED rf_base external_test rows 7547
+EVALUATED if_base test rows 2339
+EVALUATED if_base external_test rows 7547
+EVALUATED bilstm_base test rows 2339
+EVALUATED bilstm_base external_test rows 7547
+EVALUATED sage_base test rows 2339
+EVALUATED sage_base external_test rows 7547
+EVALUATED if_no_volume_timing test rows 2339
+EVALUATED if_no_volume_timing external_test rows 7547
+Reproduction saved to C:\Users\itama\Documents\Codex\2026-09-05\workshop-file-rotem-complete-draft-milestone\work\checkpoint_replay

@@ -1,0 +1,91 @@
+{
+  "manifest_audit": {
+    "rows": 267,
+    "unique_groups": 267,
+    "duplicate_group_rows": 0,
+    "split_totals": [
+      {
+        "project_split_final": "external_test",
+        "groups": 77,
+        "transactions": 963389
+      },
+      {
+        "project_split_final": "test",
+        "groups": 28,
+        "transactions": 298815
+      },
+      {
+        "project_split_final": "train",
+        "groups": 134,
+        "transactions": 1401186
+      },
+      {
+        "project_split_final": "validation",
+        "groups": 28,
+        "transactions": 300316
+      }
+    ]
+  },
+  "representation_summaries": [
+    {
+      "split": "train",
+      "source_rows": 1401186,
+      "source_groups": 134,
+      "windows": 10971,
+      "represented_groups": 130,
+      "excluded_small_groups": 4,
+      "benign_windows": 5530,
+      "malicious_windows": 5441,
+      "graph_nodes": 1277422,
+      "graph_directed_edges": 2594628,
+      "tabular_feature_count": 52,
+      "sequence_continuous_channels": 15
+    },
+    {
+      "split": "validation",
+      "source_rows": 300316,
+      "source_groups": 28,
+      "windows": 2350,
+      "represented_groups": 25,
+      "excluded_small_groups": 3,
+      "benign_windows": 1177,
+      "malicious_windows": 1173,
+      "graph_nodes": 282901,
+      "graph_directed_edges": 572224,
+      "tabular_feature_count": 52,
+      "sequence_continuous_channels": 15
+    },
+    {
+      "split": "test",
+      "source_rows": 298815,
+      "source_groups": 28,
+      "windows": 2339,
+      "represented_groups": 26,
+      "excluded_small_groups": 2,
+      "benign_windows": 1179,
+      "malicious_windows": 1160,
+      "graph_nodes": 259039,
+      "graph_directed_edges": 531286,
+      "tabular_feature_count": 52,
+      "sequence_continuous_channels": 15
+    },
+    {
+      "split": "external_test",
+      "source_rows": 963389,
+      "source_groups": 77,
+      "windows": 7547,
+      "represented_groups": 77,
+      "excluded_small_groups": 0,
+      "benign_windows": 0,
+      "malicious_windows": 7547,
+      "graph_nodes": 799015,
+      "graph_directed_edges": 1583692,
+      "tabular_feature_count": 52,
+      "sequence_continuous_channels": 15
+    }
+  ],
+  "quality": {
+    "all_passed": true,
+    "failed_checks": []
+  }
+}

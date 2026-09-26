@@ -1,0 +1,11 @@
+﻿requirement,report_sections,evidence_paths
+Modular implementation and pipeline,3–4,02_code/dnsids; 07_figures/01_modular_pipeline.pdf
+Train-only imbalance handling,4,02_code/dnsids/train.py; 02_code/dnsids/data.py
+Explicit parameters and sensitivity,4–6,03_config; 06_results/validation_sensitivity.csv; 06_results/runs
+Validation and held-out metrics,6–9,06_results/performance_matrix.csv; 06_results/final
+All-four-model FP/FN analysis,10,06_results/error_analysis; 06_results/representative_error_cases.csv; 04_data/raw_examples
+Targeted before/after refinement,11,08_documentation/VALIDATION_REFINEMENT_RATIONALE.md; 06_results/validation_sensitivity.csv; 06_results/performance_matrix.csv
+Cross-dataset and literature interpretation,"8, 15",06_results/performance_by_source_and_tool.csv; 01_report/Milestone_3_Report.pdf
+Behavioral cascade,12,02_code/dnsids/cascade.py; 03_config; 06_results/cascade
+Local open-source LLM and explanation evaluation,13–14,05_models/llm; 06_results/cascade; 02_code/start_local_llm.ps1
+Reproduction and organization,16,08_documentation/REPRODUCE.md; 09_reproducibility; START_HERE.html

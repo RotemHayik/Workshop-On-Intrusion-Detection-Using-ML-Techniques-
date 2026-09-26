@@ -1,0 +1,50 @@
+[
+  {
+    "run_id": "if_no_volume",
+    "model": "if",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "max_samples": 1024,
+      "max_features": 1.0,
+      "contamination": "auto",
+      "bootstrap": false,
+      "warm_start": false
+    },
+    "drop_features": [
+      "transaction_bytes_mean",
+      "transaction_bytes_std",
+      "transaction_bytes_p95",
+      "request_payload_mean",
+      "response_payload_mean"
+    ]
+  },
+  {
+    "run_id": "if_no_volume_timing",
+    "model": "if",
+    "seed": 42,
+    "parameters": {
+      "n_estimators": 300,
+      "max_samples": 1024,
+      "max_features": 1.0,
+      "contamination": "auto",
+      "bootstrap": false,
+      "warm_start": false
+    },
+    "drop_features": [
+      "transaction_bytes_mean",
+      "transaction_bytes_std",
+      "transaction_bytes_p95",
+      "request_payload_mean",
+      "response_payload_mean",
+      "response_time_median",
+      "response_time_std",
+      "response_time_p95",
+      "iat_mean",
+      "iat_std",
+      "iat_median",
+      "iat_p95",
+      "iat_cv"
+    ]
+  }
+]

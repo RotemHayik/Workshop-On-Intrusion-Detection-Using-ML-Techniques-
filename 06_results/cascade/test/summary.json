@@ -1,0 +1,206 @@
+{
+  "split": "test",
+  "n": 2339,
+  "stage_two": 18,
+  "llm_requested": 6,
+  "llm_valid": 6,
+  "budget_fallback": 12,
+  "invalid_fallback": 0,
+  "llm_seconds": 215.26934549992438,
+  "metrics": {
+    "cascade": {
+      "window": {
+        "n": 2339,
+        "tn": 1179,
+        "fp": 0,
+        "fn": 1,
+        "tp": 1159,
+        "threshold": 0.5,
+        "recall": 0.9991379310344828,
+        "accuracy": 0.9995724668661822,
+        "precision": 1.0,
+        "f1": 0.9995687796463993,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 0.9995689655172414,
+        "auroc": 0.9995689655172414,
+        "auprc": 0.9995654641683006,
+        "mcc": 0.9991452366769727
+      },
+      "recording": {
+        "n": 26,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 15,
+        "threshold": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "window_ci": {
+        "recall": [
+          0.9963385882187347,
+          1.0
+        ],
+        "fpr": [
+          0.0,
+          0.0
+        ],
+        "precision": [
+          1.0,
+          1.0
+        ],
+        "f1": [
+          0.9981659364777706,
+          1.0
+        ],
+        "accuracy": [
+          0.9984899866874156,
+          1.0
+        ]
+      }
+    },
+    "arbitrated": {
+      "window": {
+        "n": 2339,
+        "tn": 1178,
+        "fp": 1,
+        "fn": 1,
+        "tp": 1159,
+        "threshold": 0.5,
+        "recall": 0.9991379310344828,
+        "accuracy": 0.9991449337323642,
+        "precision": 0.9991379310344828,
+        "f1": 0.9991379310344828,
+        "fpr": 0.0008481764206955047,
+        "specificity": 0.9991518235793045,
+        "balanced_accuracy": 0.9991448773068936,
+        "auroc": 0.9991448773068936,
+        "auprc": 0.9987041383656847,
+        "mcc": 0.9982897546137872
+      },
+      "recording": {
+        "n": 26,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 15,
+        "threshold": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "window_ci": {
+        "recall": [
+          0.9963385882187347,
+          1.0
+        ],
+        "fpr": [
+          0.0,
+          0.003115264797507788
+        ],
+        "precision": [
+          0.9964865406555456,
+          1.0
+        ],
+        "f1": [
+          0.9970893761339515,
+          1.0
+        ],
+        "accuracy": [
+          0.9972722737679776,
+          1.0
+        ]
+      }
+    },
+    "production": {
+      "window": {
+        "n": 2339,
+        "tn": 1178,
+        "fp": 1,
+        "fn": 1,
+        "tp": 1159,
+        "threshold": 0.5,
+        "recall": 0.9991379310344828,
+        "accuracy": 0.9991449337323642,
+        "precision": 0.9991379310344828,
+        "f1": 0.9991379310344828,
+        "fpr": 0.0008481764206955047,
+        "specificity": 0.9991518235793045,
+        "balanced_accuracy": 0.9991448773068936,
+        "auroc": 0.9991448773068936,
+        "auprc": 0.9987041383656847,
+        "mcc": 0.9982897546137872
+      },
+      "recording": {
+        "n": 26,
+        "tn": 11,
+        "fp": 0,
+        "fn": 0,
+        "tp": 15,
+        "threshold": 1.0,
+        "recall": 1.0,
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "f1": 1.0,
+        "fpr": 0.0,
+        "specificity": 1.0,
+        "balanced_accuracy": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "mcc": 1.0
+      },
+      "window_ci": {
+        "recall": [
+          0.9963385882187347,
+          1.0
+        ],
+        "fpr": [
+          0.0,
+          0.003115264797507788
+        ],
+        "precision": [
+          0.9964865406555456,
+          1.0
+        ],
+        "f1": [
+          0.9970893761339515,
+          1.0
+        ],
+        "accuracy": [
+          0.9972722737679776,
+          1.0
+        ]
+      }
+    }
+  },
+  "requested_edge_comparison": {
+    "n": 6,
+    "before_correct": 6,
+    "after_correct": 5,
+    "corrected": 0,
+    "harmed": 1
+  },
+  "valid_edge_comparison": {
+    "n": 6,
+    "before_correct": 6,
+    "after_correct": 5,
+    "corrected": 0,
+    "harmed": 1
+  }
+}

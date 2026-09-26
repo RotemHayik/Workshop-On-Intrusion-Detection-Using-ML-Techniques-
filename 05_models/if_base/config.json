@@ -1,0 +1,13 @@
+{
+  "run_id": "if_base",
+  "model": "if",
+  "seed": 42,
+  "parameters": {
+    "n_estimators": 300,
+    "max_samples": 256,
+    "max_features": 1.0,
+    "contamination": "auto",
+    "bootstrap": false,
+    "warm_start": false
+  }
+}

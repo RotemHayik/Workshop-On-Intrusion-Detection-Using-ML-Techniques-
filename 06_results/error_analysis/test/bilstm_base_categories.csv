@@ -1,0 +1,27 @@
+run_id,dimension,value,n,fp,fn,fpr,fnr
+bilstm_base,source_name,CTU_Normal_Benign,9,0,0,0.0,
+bilstm_base,source_name,Itamar,379,0,1,,0.002638522427440633
+bilstm_base,source_name,Nitsan,1546,0,9,0.0,0.023936170212765957
+bilstm_base,source_name,dns-tunnel-dataset-master - origin - Rotem,405,0,3,,0.007407407407407408
+bilstm_base,tool_label,RogueRobin_NET,47,0,0,,0.0
+bilstm_base,tool_label,RogueRobin_PS,269,0,1,,0.0037174721189591076
+bilstm_base,tool_label,Saitama,14,0,0,,0.0
+bilstm_base,tool_label,Symbiote,1,0,0,,0.0
+bilstm_base,tool_label,benign,1179,0,0,0.0,
+bilstm_base,tool_label,dns2tcp,126,0,2,,0.015873015873015872
+bilstm_base,tool_label,dnscat2,77,0,1,,0.012987012987012988
+bilstm_base,tool_label,dnspot,118,0,0,,0.0
+bilstm_base,tool_label,iodine,382,0,9,,0.02356020942408377
+bilstm_base,tool_label,unknown,126,0,0,,0.0
+bilstm_base,scenario_type,benign_user_activity,9,0,0,0.0,
+bilstm_base,scenario_type,c2,47,0,3,,0.06382978723404255
+bilstm_base,scenario_type,download,317,0,1,,0.0031545741324921135
+bilstm_base,scenario_type,file_transfer,358,0,0,,0.0
+bilstm_base,scenario_type,handshake,14,0,0,,0.0
+bilstm_base,scenario_type,upload,48,0,0,,0.0
+bilstm_base,scenario_type,nan,1546,0,9,0.0,0.023936170212765957
+bilstm_base,evaluation_subset,ctu_benign,9,0,0,0.0,
+bilstm_base,evaluation_subset,standard_benign,1170,0,0,0.0,
+bilstm_base,evaluation_subset,standard_itamar,379,0,1,,0.002638522427440633
+bilstm_base,evaluation_subset,standard_rotem,405,0,3,,0.007407407407407408
+bilstm_base,evaluation_subset,standard_tunnel,376,0,9,,0.023936170212765957

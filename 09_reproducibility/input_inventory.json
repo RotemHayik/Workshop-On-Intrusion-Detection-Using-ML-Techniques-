@@ -1,0 +1,278 @@
+[
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\train\\train_excluded_small_groups.csv",
+    "file": "04_data/prepared/train/train_excluded_small_groups.csv",
+    "bytes": 534,
+    "sha256": "ae2a6365107baa64132cfe0f9ae49f1e24fd7186549584b56968fcac79b2db05"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\train\\train_graph.npz",
+    "file": "04_data/prepared/train/train_graph.npz",
+    "bytes": 20027642,
+    "sha256": "e739004b407c81c267d07ad731028674a610847742114441a3b6dbb439a2e074"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\train\\train_sample_manifest.csv",
+    "file": "04_data/prepared/train/train_sample_manifest.csv",
+    "bytes": 1966828,
+    "sha256": "7a21119eaeac8cd19b264ca37640985e923e16fda223f35f63c3bc41019812e0"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\train\\train_sequence.npz",
+    "file": "04_data/prepared/train/train_sequence.npz",
+    "bytes": 19400098,
+    "sha256": "962d71a17f4d5ff67af1b4fdfb567b8bd1ea013e54b4a10b487a7f2b86aef4e5"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\train\\train_tabular_raw.csv",
+    "file": "04_data/prepared/train/train_tabular_raw.csv",
+    "bytes": 6478463,
+    "sha256": "85b43178a9d644d0d62d440d2ca0cb9dfe4b9ecef9a35c03825b0cd6a386b2bf"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\train\\train_tabular_scaled.csv",
+    "file": "04_data/prepared/train/train_tabular_scaled.csv",
+    "bytes": 5402190,
+    "sha256": "f6933437f77105c1b1978b2cac74b2bc1e8e4177e9f0c626ec5955f713936c22"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\train_tabular_core42_raw.csv",
+    "file": "04_data/prepared/train/train_tabular_core42_raw.csv",
+    "bytes": 5481330,
+    "sha256": "56461907f3e30e735181bc2c27855acde258afba596e91a442114528a0e8c872"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\train_tabular_core42_scaled.csv",
+    "file": "04_data/prepared/train/train_tabular_core42_scaled.csv",
+    "bytes": 4711462,
+    "sha256": "4c4fdb1705436c34c5e7a298ddba585275274afcf7fd893b6e39463a8e56f586"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\validation\\validation_excluded_small_groups.csv",
+    "file": "04_data/prepared/validation/validation_excluded_small_groups.csv",
+    "bytes": 417,
+    "sha256": "db7c80a011170188607d45dd60048a478acb6e1657d4ed67701ca750c03d5247"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\validation\\validation_graph.npz",
+    "file": "04_data/prepared/validation/validation_graph.npz",
+    "bytes": 4317725,
+    "sha256": "197a5d359f9ad03b9a9c2ee97a694faf496fe8338d1bbf3642f864b98fa97cf8"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\validation\\validation_sample_manifest.csv",
+    "file": "04_data/prepared/validation/validation_sample_manifest.csv",
+    "bytes": 454727,
+    "sha256": "7939bf17ad1261ad572100b39198275ca640bcde9d0b6498f643c889959296c0"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\validation\\validation_sequence.npz",
+    "file": "04_data/prepared/validation/validation_sequence.npz",
+    "bytes": 4099812,
+    "sha256": "bdd2cd4574f32e610696da76208541c665e3c5882d571981ef4f15a0822b91b7"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\validation\\validation_tabular_raw.csv",
+    "file": "04_data/prepared/validation/validation_tabular_raw.csv",
+    "bytes": 1376116,
+    "sha256": "191de01e82c0cc2999d40ae62bb260afcecde11a0bdacea9abb59326dbcbf8f7"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\validation\\validation_tabular_scaled.csv",
+    "file": "04_data/prepared/validation/validation_tabular_scaled.csv",
+    "bytes": 1155540,
+    "sha256": "ae6e265aaa9dfd4e57262454e38c5b1d9aa147e99a6b48661d09658a6f3fe718"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\validation_tabular_core42_raw.csv",
+    "file": "04_data/prepared/validation/validation_tabular_core42_raw.csv",
+    "bytes": 1166544,
+    "sha256": "14f281b16ad02d96cf49090c7c5a2fca3efb387acf39daf9fc2d8ef6edce2427"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\validation_tabular_core42_scaled.csv",
+    "file": "04_data/prepared/validation/validation_tabular_core42_scaled.csv",
+    "bytes": 1012381,
+    "sha256": "6d6fe1d50ece04b2b58dc79c19709f1c217ce3f6779e9862c0d21069ae11553f"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\test\\test_excluded_small_groups.csv",
+    "file": "04_data/prepared/test/test_excluded_small_groups.csv",
+    "bytes": 305,
+    "sha256": "43bec0879790a54ceda27fc66478beca5fbd717c2d5e407e18c46e528166117b"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\test\\test_graph.npz",
+    "file": "04_data/prepared/test/test_graph.npz",
+    "bytes": 4191392,
+    "sha256": "784c15e926f9e548fecafc0d9358bf5f2dac4426f0942214a650371f5f5028e3"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\test\\test_sample_manifest.csv",
+    "file": "04_data/prepared/test/test_sample_manifest.csv",
+    "bytes": 422358,
+    "sha256": "c4aa82de0e44e5908434ebf5bf8c920d9df41d38830e072e8de492e34d8e619c"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\test\\test_sequence.npz",
+    "file": "04_data/prepared/test/test_sequence.npz",
+    "bytes": 3979927,
+    "sha256": "91129ba713fd76afc2bccef9fc287030b0282838a593aade7327be1baae65716"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\test\\test_tabular_raw.csv",
+    "file": "04_data/prepared/test/test_tabular_raw.csv",
+    "bytes": 1398693,
+    "sha256": "a5a8fc726d4f37eb2b2ac511ff2f3bd144d39a042312caa6750c4802e660b67e"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\test\\test_tabular_scaled.csv",
+    "file": "04_data/prepared/test/test_tabular_scaled.csv",
+    "bytes": 1161262,
+    "sha256": "a30a0c308e34c0aa58a9ca2ef196b02aedd5f0d0e6aab6f2e8b839f42da7777c"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\test_tabular_core42_raw.csv",
+    "file": "04_data/prepared/test/test_tabular_core42_raw.csv",
+    "bytes": 1184396,
+    "sha256": "3e086ab47366aa9926668e2575d9d2add36e2380f4cc3117531ee381fd1d966c"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\test_tabular_core42_scaled.csv",
+    "file": "04_data/prepared/test/test_tabular_core42_scaled.csv",
+    "bytes": 1011347,
+    "sha256": "66b8d7ad786019e071f72fac556c636b66ffd9fffe44d6fa8598412a9948ce32"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\external_test\\external_test_graph.npz",
+    "file": "04_data/prepared/external_test/external_test_graph.npz",
+    "bytes": 10849028,
+    "sha256": "b672cf52354d57e3a8146028c9c9c94ec1ef386d0c455ad44193f362d504ba65"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\external_test\\external_test_sample_manifest.csv",
+    "file": "04_data/prepared/external_test/external_test_sample_manifest.csv",
+    "bytes": 1388900,
+    "sha256": "994ef8db8a1c999cd49edd9859daf527de0392fa4fdd02b614cb115be7dfd337"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\external_test\\external_test_sequence.npz",
+    "file": "04_data/prepared/external_test/external_test_sequence.npz",
+    "bytes": 13745713,
+    "sha256": "d7689159a04fd62e85cbff2a1c9ba37c234964cd9f662ce8275dcd8823dee4c0"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\external_test\\external_test_tabular_raw.csv",
+    "file": "04_data/prepared/external_test/external_test_tabular_raw.csv",
+    "bytes": 4402131,
+    "sha256": "aa0a7dc0b36150a31712fb1b333c4bd152cf3b720cd7a576fd5b59e80630a42a"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representations\\external_test\\external_test_tabular_scaled.csv",
+    "file": "04_data/prepared/external_test/external_test_tabular_scaled.csv",
+    "bytes": 3617044,
+    "sha256": "82816e3c13766e06222dbdf881aaf323dd23cfae4f6ed82d719bf98a261f345a"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\external_test_tabular_core42_raw.csv",
+    "file": "04_data/prepared/external_test/external_test_tabular_core42_raw.csv",
+    "bytes": 3689801,
+    "sha256": "0bf019a464f6d8c1a8633da97d6b14b65ddff66aa31fccb8343348cbc920204d"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\representations_core42\\external_test_tabular_core42_scaled.csv",
+    "file": "04_data/prepared/external_test/external_test_tabular_core42_scaled.csv",
+    "bytes": 3101397,
+    "sha256": "4873b68baaa196c9ab8324f4fb2c3ccace3150bb5d9b1f7635cb368faf717f34"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\representation_specification.json",
+    "file": "04_data/representation_specification.json",
+    "bytes": 4204,
+    "sha256": "ef0acf8045df09051e181147307acb3cdd9ed339b3b7a9b4d97fa3f8fa4b3b39"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\transaction_scaling_parameters.json",
+    "file": "04_data/transaction_scaling_parameters.json",
+    "bytes": 1983,
+    "sha256": "bc869bd7417f9234e6019ce7ad0271307b531ab977f10d8b16fdfad633283f61"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\tabular_scaling_parameters.csv",
+    "file": "04_data/tabular_scaling_parameters.csv",
+    "bytes": 3795,
+    "sha256": "4dac3dad498c04173b7191591eedefe8ff9dbb6d2a97ab1f7bc907af8344a98f"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\quality_checks.csv",
+    "file": "04_data/quality_checks.csv",
+    "bytes": 2793,
+    "sha256": "0b7f3e2ea24b8d1fb152ea26f4f8af92cf137661bfb154717685f0e04186898c"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\chapter6_preparation\\preparation_summary.json",
+    "file": "04_data/preparation_summary.json",
+    "bytes": 2346,
+    "sha256": "978674020b4624bfd2030d8e1c26eb9231aca9b9ca070c046f8dc7a60eb1cc24"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\chapter6_methodology\\evaluation_protocol_revised.json",
+    "file": "03_config/evaluation_protocol_revised.json",
+    "bytes": 6121,
+    "sha256": "29b0598ff8d057b4a6f08cca4db90163367f4f7ce4be20e2cab8b0cd8025e4ed"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\prepare_chapter6_inputs.py",
+    "file": "02_code/part2_reference/prepare_chapter6_inputs.py",
+    "bytes": 27660,
+    "sha256": "7130e3b97334131d23d44d5ebc03cba95204aa15742c918158bb01a5138cf9e7"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\generate_chapter4_analysis.py",
+    "file": "02_code/part2_reference/generate_chapter4_analysis.py",
+    "bytes": 31388,
+    "sha256": "4c95335c5c44f1935a4fe75573eb199e003d7b1788e392853a324c941a435792"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\generate_chapter5_analysis.py",
+    "file": "02_code/part2_reference/generate_chapter5_analysis.py",
+    "bytes": 16571,
+    "sha256": "2c3bc46471057d249a61348aca619b8183be1825b3f148202f3394f4677af593"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\generate_group_aware_feature_evidence.py",
+    "file": "02_code/part2_reference/generate_group_aware_feature_evidence.py",
+    "bytes": 14955,
+    "sha256": "5a9c62e44538a75293b98d9530cacb44219ae3ff94e823440c7686641e206ed4"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\finalize_comprehensive_methodology.py",
+    "file": "02_code/part2_reference/finalize_comprehensive_methodology.py",
+    "bytes": 8717,
+    "sha256": "db7f526a9556b3a760913b0ba5110d9863171bbe2c1ea187908d36bc66ffdf76"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\finalize_chapter6_preparation.py",
+    "file": "02_code/part2_reference/finalize_chapter6_preparation.py",
+    "bytes": 20508,
+    "sha256": "1d1471a6089fa1da2126e38bd9a682e0dd7a34a47a591edb88c938cce7cb5198"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\group_aware_evidence\\Appendix_C_Group_Aware_52_Feature_Evidence.csv",
+    "file": "04_data/Appendix_C_Group_Aware_52_Feature_Evidence.csv",
+    "bytes": 31788,
+    "sha256": "8dcf13bab733682e2e4c517bef88bb40a4d0ecb8163697e3ae36ac72b8b7d518"
+  },
+  {
+    "source": "C:\\Users\\itama\\.codex\\.chatgpt-projects\\g-p-6a854f23fb9881919e8fd4f93cbd224c\\comprehensive_corrections\\group_aware_evidence\\Appendix_D_Core_42_Feature_Schema.csv",
+    "file": "04_data/Appendix_D_Core_42_Feature_Schema.csv",
+    "bytes": 26011,
+    "sha256": "5b4ecb765eedaa15b68c86834c67f459a5a3a55b7eaa29453b8212b6e9f80db7"
+  },
+  {
+    "source": "work\\final_split_manifest.csv",
+    "file": "04_data/final_split_manifest.csv",
+    "bytes": 34131,
+    "sha256": "8d3ad20736a1a595a364febd285745f039ed60a17667e6437f81ec7014ea517f"
+  }
+]
