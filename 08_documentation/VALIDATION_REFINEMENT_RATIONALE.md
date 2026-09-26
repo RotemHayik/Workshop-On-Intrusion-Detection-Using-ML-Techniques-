@@ -1,9 +1,0 @@
-# Validation driven refinement record
-
-Registered before any held-out model predictions were produced. Both candidates retain benign-only recording-balanced fitting and all frozen split memberships.
-
-The baseline Isolation Forest produces seven Validation false positives, all seven windows of CTU-Normal-6. Every erroneous window exceeds the maximum benign Train window for transaction-byte mean, standard deviation, 95th percentile and response-payload mean. Its median query-name length is 18.75 characters, compared with 14.20 in benign Train and 40.00 in malicious Train. This suggests that packet volume captures a background acquisition difference as well as attack behavior; it does not establish causation. Five of the seven also exceed the benign Train maximum for interarrival-time p95.
-
-Two bounded hypotheses are tested: remove the five packet-volume features; then additionally remove eight timing features. The lexical, recurrence, query-type and response-code features remain. Both use the 1,024-subsample IF candidate, whose Validation false positives fell from seven to three. Selection uses the same Validation recall then FPR criterion, with simpler base configurations favored on exact ties. Test results cannot select either refinement. See if_feature_comparison.csv for the measured feature evidence.
-
-After all declared runs completed, Random Forest and GraphSAGE had no Validation errors. The baseline BiLSTM had one CTU false positive. The wider and deeper BiLSTM candidates produced five and four false positives, while the lower learning rate tied the baseline at one. The baseline was retained by the predeclared tie rule. No further architecture search was added after inspecting Test. This paragraph records the completed Validation audit; the IF hypotheses above were registered before Test.
