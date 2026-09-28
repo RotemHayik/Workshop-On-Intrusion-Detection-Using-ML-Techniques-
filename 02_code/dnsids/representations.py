@@ -1,41 +1,32 @@
+"""Portable tabular, sequence and graph input construction for Milestone 3.
+
+Feature definitions, window ordering and numeric transformations are preserved
+from the accepted preparation pipeline. Every output path is supplied by the
+caller; fitting is performed on the Train inputs passed to the fit functions.
+"""
 from __future__ import annotations
 
-import csv
 import hashlib
 import json
 import math
 import shutil
 import zlib
-from collections import Counter, defaultdict
+from collections import defaultdict
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
-from generate_chapter4_analysis import META_COLUMNS, aggregate_window
+from .window_features import META_COLUMNS, aggregate_window
 
-
-ROOT = Path(__file__).resolve().parent
-DRIVE = Path(r"G:\My Drive\Workshop Files\Rotem")
-OUT = ROOT / "chapter6_preparation"
-REP = OUT / "representations"
 WINDOW_SIZE = 128
+
+
 MIN_WINDOW_SIZE = 32
+
+
 CHUNK_SIZE = 50_000
 
-SPLITS = {
-    "train": DRIVE / "train_transactions.csv",
-    "validation": DRIVE / "validation_transactions.csv",
-    "test": DRIVE / "test_transactions.csv",
-    "external_test": DRIVE / "external_test_transactions.csv",
-}
-EXPECTED_ROWS = {
-    "train": 1_401_186,
-    "validation": 300_316,
-    "test": 298_815,
-    "external_test": 963_389,
-}
-EXPECTED_GROUPS = {"train": 134, "validation": 28, "test": 28, "external_test": 77}
 
 TABULAR_INPUT_COLUMNS = [
     "split_group_id", "traffic_label", "source_name", "tool_label", "scenario_type",
@@ -48,6 +39,7 @@ TABULAR_INPUT_COLUMNS = [
     "request_len", "response_len",
 ]
 
+
 SEQUENCE_CONTINUOUS = [
     "query_name_len", "subdomain_len", "num_labels", "max_label_len",
     "query_entropy", "longest_subdomain_entropy", "long_consonant_string_count",
@@ -55,14 +47,21 @@ SEQUENCE_CONTINUOUS = [
     "total_transaction_bytes", "req_resp_time_diff", "interarrival_time",
     "is_response_missing",
 ]
+
+
 ENTROPY_FEATURES = {"query_entropy", "longest_subdomain_entropy"}
+
+
 BINARY_FEATURES = {"is_response_missing"}
+
 
 QTYPE_VOCAB = {
     "PAD": 0, "UNK": 1, "A": 2, "AAAA": 3, "CNAME": 4, "TXT": 5,
     "MX": 6, "NULL": 7, "PRIVATE": 8, "NS": 9, "SOA": 10, "PTR": 11,
     "KEY": 12, "SRV": 13, "SVCB": 14, "HTTPS": 15, "ANY": 16,
 }
+
+
 RCODE_VOCAB = {
     "PAD": 0, "UNK": 1, "NOERROR": 2, "NXDOMAIN": 3, "SERVFAIL": 4,
     "REFUSED": 5, "FORMERR": 6, "NOTIMP": 7, "NULL": 8,
@@ -82,8 +81,9 @@ def stable_sample_id(split: str, group_id: str, window_number: int) -> str:
     return f"{split}-{digest}-{window_number:06d}"
 
 
-def iter_groups(path: Path, usecols: list[str], tag: str):
-    bucket_dir = OUT / "temporary_group_buckets" / f"{tag}_{path.stem}"
+def iter_groups(path: Path, usecols: list[str], tag: str, *, output: Path):
+    # Keep scratch paths short enough for common Windows checkout locations.
+    bucket_dir = output / "_tmp" / tag
     if bucket_dir.exists():
         shutil.rmtree(bucket_dir)
     bucket_dir.mkdir(parents=True, exist_ok=True)
@@ -113,7 +113,7 @@ def iter_groups(path: Path, usecols: list[str], tag: str):
     print(f"read {path.name}: rows={rows_read:,}, groups={groups_yielded}", flush=True)
 
 
-def fit_transaction_scaler(train_path: Path) -> dict[str, dict[str, float | str]]:
+def fit_transaction_scaler(train_path: Path, *, output: Path) -> dict[str, dict[str, float | str]]:
     values: dict[str, list[np.ndarray]] = {feature: [] for feature in SEQUENCE_CONTINUOUS if feature != "interarrival_time"}
     raw_columns = [feature for feature in values]
     for chunk in pd.read_csv(train_path, usecols=raw_columns, chunksize=CHUNK_SIZE, low_memory=False):
@@ -127,7 +127,7 @@ def fit_transaction_scaler(train_path: Path) -> dict[str, dict[str, float | str]
             values[feature].append(array)
 
     iat_values: list[np.ndarray] = []
-    for _, group in iter_groups(train_path, ["split_group_id", "request_timestamp"], "iat_fit"):
+    for _, group in iter_groups(train_path, ["split_group_id", "request_timestamp"], "iat_fit", output=output):
         ts = pd.to_numeric(group["request_timestamp"], errors="coerce").to_numpy(dtype=np.float64)
         ts = np.sort(ts[np.isfinite(ts)])
         if len(ts) > 1:
@@ -259,7 +259,7 @@ def build_graph(window: pd.DataFrame, continuous: np.ndarray, qtype_ids: np.ndar
     return node_features, edge_index, edge_attr
 
 
-def process_split(split: str, path: Path, scaler: dict[str, dict[str, float | str]]):
+def process_split(split: str, path: Path, scaler: dict[str, dict[str, float | str]], *, output: Path):
     print(f"processing split={split}", flush=True)
     manifest_rows: list[dict[str, object]] = []
     tabular_rows: list[dict[str, object]] = []
@@ -278,7 +278,7 @@ def process_split(split: str, path: Path, scaler: dict[str, dict[str, float | st
     transaction_total = 0
     group_total = 0
 
-    for group_id, group in iter_groups(path, TABULAR_INPUT_COLUMNS, f"representation_{split}"):
+    for group_id, group in iter_groups(path, TABULAR_INPUT_COLUMNS, f"representation_{split}", output=output):
         group_total += 1
         transaction_total += len(group)
         labels_in_group = group["traffic_label"].astype(str).str.lower().unique()
@@ -336,7 +336,7 @@ def process_split(split: str, path: Path, scaler: dict[str, dict[str, float | st
     tabular = pd.DataFrame(tabular_rows)
     feature_columns = [column for column in tabular.columns if column not in META_COLUMNS + ["sample_id", "label"]]
     tabular = tabular[["sample_id", "label"] + feature_columns]
-    split_dir = REP / split
+    split_dir = output / "prepared" / split
     split_dir.mkdir(parents=True, exist_ok=True)
     tabular.to_csv(split_dir / f"{split}_tabular_raw.csv", index=False, encoding="utf-8-sig")
     pd.DataFrame(manifest_rows).to_csv(split_dir / f"{split}_sample_manifest.csv", index=False, encoding="utf-8-sig")
@@ -427,25 +427,13 @@ def scale_tabular(frame: pd.DataFrame, feature_columns: list[str], scaler: dict[
     return output
 
 
-def validate_manifest() -> dict[str, object]:
-    manifest = pd.read_csv(DRIVE / "final_split_manifest.csv", low_memory=False)
-    duplicates = int(manifest["split_group_id"].duplicated().sum())
-    totals = manifest.groupby("project_split_final").agg(groups=("split_group_id", "nunique"), transactions=("transactions", "sum")).reset_index()
-    return {
-        "rows": int(len(manifest)),
-        "unique_groups": int(manifest["split_group_id"].nunique()),
-        "duplicate_group_rows": duplicates,
-        "split_totals": totals.to_dict(orient="records"),
-    }
-
-
-def write_specs(transaction_scaler, tabular_scaler, feature_columns):
-    OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / "transaction_scaling_parameters.json").write_text(json.dumps(transaction_scaler, indent=2), encoding="utf-8")
+def write_specs(transaction_scaler, tabular_scaler, feature_columns, *, output: Path):
+    output.mkdir(parents=True, exist_ok=True)
+    (output / "transaction_scaling_parameters.json").write_text(json.dumps(transaction_scaler, indent=2), encoding="utf-8")
     pd.DataFrame([
         {"feature": feature, **values, "fit_partition": "train_only"}
         for feature, values in tabular_scaler.items()
-    ]).to_csv(OUT / "tabular_scaling_parameters.csv", index=False, encoding="utf-8-sig")
+    ]).to_csv(output / "tabular_scaling_parameters.csv", index=False, encoding="utf-8-sig")
     representation_spec = {
         "sample_unit": {"window_size": WINDOW_SIZE, "minimum_partial_window": MIN_WINDOW_SIZE, "overlap": 0, "boundary": "split_group_id", "max_windows_per_group": None},
         "tabular": {"features": feature_columns, "feature_count": len(feature_columns), "raw_identity_fields_in_predictors": []},
@@ -459,76 +447,4 @@ def write_specs(transaction_scaler, tabular_scaler, feature_columns):
             "note": "Raw endpoint/domain strings are used only to construct within-window topology and are not stored as model features. This is a project proxy graph because recursive resolver paths from GraphTunnel are unavailable in the unified schema.",
         },
     }
-    (OUT / "representation_specification.json").write_text(json.dumps(representation_spec, indent=2, ensure_ascii=False), encoding="utf-8")
-
-
-def validate_outputs(summaries: list[dict[str, object]], feature_columns: list[str]) -> dict[str, object]:
-    checks: list[dict[str, object]] = []
-    sample_sets: dict[str, set[str]] = {}
-    for summary in summaries:
-        split = str(summary["split"])
-        split_dir = REP / split
-        manifest = pd.read_csv(split_dir / f"{split}_sample_manifest.csv", low_memory=False)
-        raw = pd.read_csv(split_dir / f"{split}_tabular_raw.csv", low_memory=False)
-        scaled = pd.read_csv(split_dir / f"{split}_tabular_scaled.csv", low_memory=False)
-        sequence = np.load(split_dir / f"{split}_sequence.npz")
-        graph = np.load(split_dir / f"{split}_graph.npz")
-        ids = set(manifest["sample_id"].astype(str))
-        sample_sets[split] = ids
-        values = scaled[feature_columns].to_numpy(dtype=np.float64)
-        checks.extend([
-            {"check": f"{split}_source_row_count", "passed": int(summary["source_rows"]) == EXPECTED_ROWS[split], "observed": int(summary["source_rows"]), "expected": EXPECTED_ROWS[split]},
-            {"check": f"{split}_source_group_count", "passed": int(summary["source_groups"]) == EXPECTED_GROUPS[split], "observed": int(summary["source_groups"]), "expected": EXPECTED_GROUPS[split]},
-            {"check": f"{split}_sample_alignment", "passed": ids == set(raw.sample_id.astype(str)) == set(scaled.sample_id.astype(str)) == set(sequence["sample_id"].astype(str)) == set(graph["sample_id"].astype(str)), "observed": len(ids), "expected": int(summary["windows"])},
-            {"check": f"{split}_scaled_finite", "passed": bool(np.isfinite(values).all()), "observed": int((~np.isfinite(values)).sum()), "expected": 0},
-            {"check": f"{split}_sequence_finite", "passed": bool(np.isfinite(sequence["continuous"]).all()), "observed": int((~np.isfinite(sequence["continuous"])).sum()), "expected": 0},
-            {"check": f"{split}_graph_finite", "passed": bool(np.isfinite(graph["node_features"]).all() and np.isfinite(graph["edge_features"]).all()), "observed": int((~np.isfinite(graph["node_features"])).sum() + (~np.isfinite(graph["edge_features"])).sum()), "expected": 0},
-            {"check": f"{split}_mask_matches_window_count", "passed": bool(np.array_equal(sequence["mask"].sum(axis=1), manifest["window_tx_count"].to_numpy())), "observed": int(sequence["mask"].sum()), "expected": int(manifest["window_tx_count"].sum())},
-            {"check": f"{split}_feature_count", "passed": len(feature_columns) == 52, "observed": len(feature_columns), "expected": 52},
-        ])
-    for left_index, left in enumerate(SPLITS):
-        for right in list(SPLITS)[left_index + 1:]:
-            overlap = sample_sets[left] & sample_sets[right]
-            checks.append({"check": f"sample_id_overlap_{left}_{right}", "passed": not overlap, "observed": len(overlap), "expected": 0})
-    passed = all(bool(check["passed"]) for check in checks)
-    pd.DataFrame(checks).to_csv(OUT / "quality_checks.csv", index=False, encoding="utf-8-sig")
-    return {"all_passed": passed, "checks": checks}
-
-
-def main():
-    OUT.mkdir(parents=True, exist_ok=True)
-    REP.mkdir(parents=True, exist_ok=True)
-    manifest_audit = validate_manifest()
-    if manifest_audit["rows"] != 267 or manifest_audit["duplicate_group_rows"] != 0:
-        raise RuntimeError(f"Manifest integrity failure: {manifest_audit}")
-    transaction_scaler = fit_transaction_scaler(SPLITS["train"])
-    (OUT / "transaction_scaling_parameters.json").write_text(json.dumps(transaction_scaler, indent=2), encoding="utf-8")
-
-    train_raw, train_summary, feature_columns = process_split("train", SPLITS["train"], transaction_scaler)
-    tabular_scaler = fit_tabular_scaler(train_raw, feature_columns)
-    train_scaled = scale_tabular(train_raw, feature_columns, tabular_scaler)
-    train_scaled.to_csv(REP / "train" / "train_tabular_scaled.csv", index=False, encoding="utf-8-sig")
-    summaries = [train_summary]
-
-    for split in ["validation", "test", "external_test"]:
-        raw, summary, other_features = process_split(split, SPLITS[split], transaction_scaler)
-        if other_features != feature_columns:
-            raise RuntimeError(f"Tabular schema/order mismatch in {split}")
-        scale_tabular(raw, feature_columns, tabular_scaler).to_csv(REP / split / f"{split}_tabular_scaled.csv", index=False, encoding="utf-8-sig")
-        summaries.append(summary)
-
-    write_specs(transaction_scaler, tabular_scaler, feature_columns)
-    qa = validate_outputs(summaries, feature_columns)
-    report = {
-        "manifest_audit": manifest_audit,
-        "representation_summaries": summaries,
-        "quality": {"all_passed": qa["all_passed"], "failed_checks": [row for row in qa["checks"] if not row["passed"]]},
-    }
-    (OUT / "preparation_summary.json").write_text(json.dumps(report, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(json.dumps(report, indent=2, ensure_ascii=False), flush=True)
-    if not qa["all_passed"]:
-        raise RuntimeError("One or more preparation quality checks failed")
-
-
-if __name__ == "__main__":
-    main()
+    (output / "representation_specification.json").write_text(json.dumps(representation_spec, indent=2, ensure_ascii=False), encoding="utf-8")

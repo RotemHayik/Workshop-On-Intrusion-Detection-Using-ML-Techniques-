@@ -95,6 +95,10 @@ The primary tabular representation contains the accepted 42-feature core. The se
 
 The pipeline starts from parsed DNS transaction tables rather than arbitrary PCAP files.
 
+The preparation implementation is self-contained in `02_code/dnsids`: `prepare.py` handles input validation and orchestration, `window_features.py` computes window statistics, and `representations.py` constructs and scales the tabular, sequence, and graph inputs. Input and output locations are supplied through `--raw-dir` and `--output`; no machine-specific Drive paths or legacy analysis scripts are required. Feature definitions, window ordering, and numeric transformations are unchanged.
+
+The preparation tests rebuild a small fixture in temporary directories, check representation alignment and recording separation, and verify that changing held-out observations does not alter the Train-fitted transforms.
+
 ## Reading prediction outputs
 
 Every prediction row contains `sample_id` for alignment across model outputs.
@@ -117,8 +121,6 @@ Recording-level evaluation uses the 95th percentile of window scores within each
 Completed training runs are marked by `COMPLETE.json`. A fresh inference replay should always use a new output directory rather than overwrite the submitted evidence.
 
 The local LLM responses are stored in JSONL logs so an interrupted arbitration run can resume while preserving completed outcomes.
-
-`verify_package.py` checks the saved experiment package, including split disjointness, representation alignment, model-selection locks, completed training runs, and cascade population accounting.
 
 ## Recreate the figures
 

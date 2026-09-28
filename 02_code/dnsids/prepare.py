@@ -1,25 +1,20 @@
-"""Portable ingestion adapter and inherited Part 2 feature transformations.
+"""Portable ingestion adapter for the Milestone 3 input representations.
 
 Only this module handles input column names. Training modules consume prepared
 arrays with one invariant schema. Raw captures must first be parsed into the
 transaction fields specified by the adapter (no implicit PCAP parser).
 """
 
-import argparse, json, sys, importlib
+import argparse
+import json
 from pathlib import Path
 import pandas as pd
 
-
-def reference():
-    folder = Path(__file__).resolve().parents[1] / "part2_reference"
-    if str(folder) not in sys.path:
-        sys.path.insert(0, str(folder))
-    return importlib.import_module("prepare_chapter6_inputs")
+from . import representations as ref
 
 
 def ingest(source, target, column_map=None):
     """Rename adapter fields and validate canonical labels and recording IDs."""
-    ref = reference()
     first = True
     for chunk in pd.read_csv(source, chunksize=50000, low_memory=False):
         chunk = chunk.rename(columns=column_map or {})
@@ -54,9 +49,6 @@ def build(raw_dir, output, root, column_map=None):
     output.mkdir(parents=True)
     ingested = output / "canonical_transactions"
     ingested.mkdir()
-    ref = reference()
-    ref.OUT = output
-    ref.REP = output / "prepared"
     splits = ["train", "validation", "test", "external_test"]
     groups = {}
     for split in splits:
@@ -71,9 +63,9 @@ def build(raw_dir, output, root, column_map=None):
         for previous in splits[: splits.index(split)]:
             if groups[split] & groups[previous]:
                 raise ValueError("Recording leakage across splits")
-    ts = ref.fit_transaction_scaler(ingested / "train_transactions.csv")
+    ts = ref.fit_transaction_scaler(ingested / "train_transactions.csv", output=output)
     raw, summary, features = ref.process_split(
-        "train", ingested / "train_transactions.csv", ts
+        "train", ingested / "train_transactions.csv", ts, output=output
     )
     scaler = ref.fit_tabular_scaler(raw, features)
     summaries = [summary]
@@ -83,19 +75,19 @@ def build(raw_dir, output, root, column_map=None):
     for split in splits:
         if split != "train":
             raw, summary, other = ref.process_split(
-                split, ingested / f"{split}_transactions.csv", ts
+                split, ingested / f"{split}_transactions.csv", ts, output=output
             )
             if other != features:
                 raise ValueError("Feature order differs")
             summaries.append(summary)
         scaled = ref.scale_tabular(raw, features, scaler)
-        folder = ref.REP / split
+        folder = output / "prepared" / split
         scaled.to_csv(folder / f"{split}_tabular_scaled.csv", index=False)
         for name, frame in [("raw", raw), ("scaled", scaled)]:
             frame[["sample_id", "label"] + core].to_csv(
                 folder / f"{split}_tabular_core42_{name}.csv", index=False
             )
-    ref.write_specs(ts, scaler, features)
+    ref.write_specs(ts, scaler, features, output=output)
     (output / "preparation_summary.json").write_text(json.dumps(summaries, indent=2))
 
 

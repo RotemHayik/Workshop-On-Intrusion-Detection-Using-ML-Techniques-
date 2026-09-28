@@ -2,14 +2,14 @@ import json
 from pathlib import Path
 import numpy as np
 import pandas as pd
-from dnsids.prepare import reference, ingest
+from dnsids.prepare import ingest
+from dnsids import representations as ref
 from dnsids.data import recording_weights
 
 ROOT = Path(__file__).resolve().parents[2]
 
 
 def test_real_raw_window_reconstructs_all_model_representations():
-    ref = reference()
     folder = ROOT / "04_data/raw_examples/validation"
     row = pd.read_csv(folder / "case_index.csv").iloc[0]
     sid = row.sample_id
